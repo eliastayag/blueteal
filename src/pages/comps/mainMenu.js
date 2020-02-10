@@ -3,7 +3,11 @@ import React from 'react';
 function MainMenu(){
     return(
         <div>
-            <p>hello menu</p>
+            <p>Home</p>
+            <p>Classes</p>
+            <p>Schedule</p>
+            <p>Performance</p>
+            <p>Forum</p>
         </div>
     )
 }

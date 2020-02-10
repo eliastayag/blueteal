@@ -8,6 +8,15 @@ export default {
   component: MainButton,
 };
 
-export const DefaultButton = () =>{
+export const DefaultButton= () =>{
   return <MainButton />;
 }
+
+export const PopupButton = () =>{
+  return <MainButton />;
+}
+
+export const AddButton = () =>{
+  return <MainButton />;
+}
+
