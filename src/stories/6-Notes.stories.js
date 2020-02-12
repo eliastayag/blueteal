@@ -1,5 +1,5 @@
 import React from 'react';
-import Notes from '../pages/comps/Notes';
+import Notes from '../pages/comps/Notes/Notes';
 
 import { action } from '@storybook/addon-actions';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../pages/comps/Header';
+import Header from '../pages/comps/Header/Header';
 
 import { action } from '@storybook/addon-actions';
 

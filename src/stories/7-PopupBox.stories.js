@@ -1,5 +1,5 @@
 import React from 'react';
-import PopupBox from '../pages/comps/PopupBox';
+import PopupBox from '../pages/comps/PopupBox/PopupBox';
 
 import { action } from '@storybook/addon-actions';
 

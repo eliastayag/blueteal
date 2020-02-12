@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from '../pages/comps/Calendar';
+import Calendar from '../pages/comps/Calendar/Calendar';
 
 import { action } from '@storybook/addon-actions';
 

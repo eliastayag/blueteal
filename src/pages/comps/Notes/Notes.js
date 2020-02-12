@@ -12,7 +12,10 @@ function Notes({style}){
 
 Notes.defaultProps = {
     style:{
-        backgroundColor:"yellow"
+        backgroundColor:"#FFF8C9",
+        height:"50vh",
+        width:"50vh",
+        padding:"5px",
     }
 }
 

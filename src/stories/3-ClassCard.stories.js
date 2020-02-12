@@ -1,5 +1,5 @@
 import React from 'react';
-import ClassCard from '../pages/comps/ClassCard';
+import ClassCard from '../pages/comps/ClassCard/ClassCard';
 
 import { action } from '@storybook/addon-actions';
 
