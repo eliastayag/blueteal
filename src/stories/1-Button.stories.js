@@ -9,7 +9,7 @@ export default {
 };
 
 export const DefaultButton= () =>{
-  return <MainButton />;
+  return <MainButton style={}/>;
 }
 
 export const PopupButton = () =>{

@@ -3,6 +3,7 @@ import MainButton from "../Button/Button";
 
 
 
+
 function PopupBox({style,instyle,defaultheader,position,position2}){
     return(
         
