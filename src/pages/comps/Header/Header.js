@@ -12,9 +12,7 @@ function Header({title,style}){
 
 Header.defaultProps = {
     title:"Default Header",
-    style:{
-        backgroundColor:"gainsboro"
-    }
+
 }
 
 export default Header;
