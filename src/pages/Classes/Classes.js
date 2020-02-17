@@ -1,48 +1,45 @@
 import React, {useState} from 'react';
 
-import Menu from '../comps/Menu/Menu';
 import Header from '../comps/Header/Header';
 import theme from '../../styles/ThemeStyles';
 import Button from '../comps/Button/Button';
 import './Classes.scss'
+import SelectClass from './SelectClass'
+import ClassDash from './ClassDash';
 
 
-function Classes() {
+function Classes(props) {
 
-    var items = [
-        {
-          itemTitle:'Home',
-          // onClick:()=>{alert('home')}
-        },
-        {
-          itemTitle:'Classes',
-          // onClick:()=>{alert('classes')}
-        },
-        {
-          itemTitle:'Schedule',
-          // onClick:()=>{alert('schedule')}
-        },
-        {
-          itemTitle:'Performance',
-          // onClick:()=>{alert('performance')}
-        },
-        {
-          itemTitle:'Forums',
-          // onClick:()=>{alert('forums')}
-        },
-      ]
-      
+  var Content = null;
+  const [cont, setCont] = useState ('SelectClass');
+  
+
+
+  if(cont == 'SelectClass'){
+    Content = <SelectClass 
+                cont={cont}
+                setCont={setCont}
+                
+                />
+  }
+
+  if(cont == 'ClassDash'){
+    Content = <ClassDash
+                cont={cont}
+                setCont={setCont}
+    />
+  }
+
+
+  
+
 
   return (
-    <div className="body" style={{backgroundColor:theme.background}}>
+    <div style={{backgroundColor:theme.background}}>
 
-      <div className="heading">
-      <Header title={"Classes"}/>
-      </div>
+    {Content}
 
-      <div className="button">
-        <Button />
-      </div>
+
     
     </div>
 
