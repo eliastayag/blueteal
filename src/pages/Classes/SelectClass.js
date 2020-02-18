@@ -4,8 +4,8 @@ import Header from '../comps/Header/Header';
 import theme from '../../styles/ThemeStyles';
 import Button from '../comps/Button/Button';
 import './Classes.scss'
-import SelectItem from './SelectItem';
 import Classes from './Classes'
+import ClassCard from '../comps/ClassCard/ClassCard';
 
 
 function SelectClass({items,props}) {
@@ -18,11 +18,11 @@ function SelectClass({items,props}) {
         },
         {
           itemTitle:'English 5',
-          onClick:()=>{props.setCont('Classes')}
+          onClick:()=>{props.showPage('ClassDash')}
         },
         {
           itemTitle:'English 6',
-          onClick:()=>{props.setCont('Schedule')}
+          onClick:()=>{props.showPage('ClassDash')}
         },
       ]
 
@@ -37,8 +37,10 @@ function SelectClass({items,props}) {
 
       <div className="cards">
 
+
+
       {items.map((o,i)=>{
-                    return <SelectItem  {...o} />
+                    return <ClassCard  {...o} />
                 })}
           
       </div>
