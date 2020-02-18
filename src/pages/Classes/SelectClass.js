@@ -29,7 +29,7 @@ function SelectClass({items,props}) {
 
 
   return (
-    <div className="body" style={{backgroundColor:theme.background}} onClick={() => props.showPage("ClassDash")}>
+    <div className="body"  onClick={() => props.showPage("ClassDash")}>
 
       <div className="heading">
       <Header title={"Classes"} />

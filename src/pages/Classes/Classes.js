@@ -35,7 +35,7 @@ function Classes(props) {
 
 
   return (
-    <div style={{backgroundColor:theme.background}}>
+    <div >
 
     {Content}
 
