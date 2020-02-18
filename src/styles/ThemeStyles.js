@@ -18,12 +18,15 @@ const theme = {
     darkerGray:'#656565',
     gray:'#AAAAAA',
 
+
+    background: '#E5E5E5',
+
     
     
     
     
     // Fonts
-    NiranitRegular:'NIramit-Regular',
+    NiranitRegular:'Niramit-Regular',
     NiranitLight:'Niramit-Light',
     NiranitBold:'Niramit-Bold',
     

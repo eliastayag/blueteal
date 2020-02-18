@@ -1,0 +1,15 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45vh;
+    justify-content: center;
+}
+
+.heading{
+    position: absolute;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}

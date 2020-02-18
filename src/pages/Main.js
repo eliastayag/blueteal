@@ -13,7 +13,7 @@ function Main() {
     //After logging in Main will return Dashboard.js (via props)
     //Dashboard controls all the /comps (Home.js, CLasses.js, etc...) that are being used
     var page = null;
-    const [showpage, setShowpage] = useState('Login'); 
+    const [showpage, setShowpage] = useState('Dashboard'); 
     const [pop, showPop] = useState(''); 
 
     if(showpage == 'Login'){
