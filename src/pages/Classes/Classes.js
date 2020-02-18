@@ -19,7 +19,6 @@ function Classes(props) {
     Content = <SelectClass 
                 cont={cont}
                 setCont={setCont}
-                
                 />
   }
 

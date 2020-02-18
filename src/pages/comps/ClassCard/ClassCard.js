@@ -5,7 +5,7 @@ import './ClassCard.scss'
 
 function ClassCard({itemTitle,onClick,active,style}){
     return(
-        <div className='classcard' onClick={onClick} >
+        <div className='classcard-1' id={style} onClick={onClick} >
             {itemTitle}
         </div>
 
@@ -15,7 +15,8 @@ function ClassCard({itemTitle,onClick,active,style}){
 
 ClassCard.defaultProps = {
     itemTitle:"Menu Item Title",
-    onClick: ()=> {}
+    onClick: ()=> {},
+    style:"classcard-purple"
 
 }
 

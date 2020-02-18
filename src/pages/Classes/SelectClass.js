@@ -6,7 +6,7 @@ import Button from '../comps/Button/Button';
 import './Classes.scss'
 import Classes from './Classes'
 import ClassCard from '../comps/ClassCard/ClassCard';
-
+import '../comps/ClassCard/ClassCard.scss'
 
 function SelectClass({items,props,style}) {
 
@@ -43,7 +43,7 @@ function SelectClass({items,props,style}) {
 
 
       {items.map((o,i)=>{
-                    return <ClassCard  className={style} {...o} />
+                    return <ClassCard id={style} {...o} />
                 })}
           
       </div>
