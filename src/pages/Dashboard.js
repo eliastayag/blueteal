@@ -8,6 +8,7 @@ import Menu from "./comps/Menu/Menu";
 import theme from "../styles/ThemeStyles";
 import "./DashboardStyles.scss";
 
+
 function Dashboard() {
   //cont is default to Home.js
   var Content = null;
@@ -71,7 +72,7 @@ function Dashboard() {
       >
         <div id="bottom">
           <div className="t">
-            <img src={'../imgs/icons/png/t.thick.white.png'} />
+            <img src={require('../imgs/icons/png/t.thin.white.png')}/>
           </div>
 
           <Menu items={items} />
