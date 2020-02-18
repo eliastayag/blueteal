@@ -15,7 +15,7 @@ function ClassCard({itemTitle,onClick,active,style}){
 
 ClassCard.defaultProps = {
     itemTitle:"Menu Item Title",
-    onClick: ()=> {},
+    // onClick: ()=> {},
     style:"classcard-purple"
 
 }

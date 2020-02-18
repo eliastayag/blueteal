@@ -3,6 +3,7 @@ import Classes from "./Classes/Classes";
 import Forums from "./Forums/Forums";
 import Home from "./Home/Home";
 import Performance from "./Performance/Performance";
+import Notes from "./Notes/Notes";
 import Schedule from "./Schedule/Schedule";
 import Menu from "./comps/Menu/Menu";
 import theme from "../styles/ThemeStyles";
@@ -27,6 +28,9 @@ function Dashboard() {
   }
   if (cont == "Performance") {
     Content = <Performance />;
+  }
+  if (cont == "Notes") {
+    Content = <Notes />;
   }
   if (cont == "Forums") {
     Content = <Forums />;
@@ -58,6 +62,12 @@ function Dashboard() {
       }
     },
     {
+      itemTitle: "Notes",
+      onClick: () => {
+        setCont("Notes");
+      }
+    },
+    {
       itemTitle: "Forums",
       onClick: () => {
         setCont("Forums");
@@ -79,7 +89,10 @@ function Dashboard() {
 
           <Menu items={items} />
 
-          <div className="settings">settings</div>
+          <div className="settings">
+          <img className="cog" src={require('../imgs/icons/png/gear.black.png')}/>
+
+          </div>
         </div>
       </div>
 

@@ -3,21 +3,26 @@ import React, {useState} from 'react';
 import Header from '../comps/Header/Header';
 import theme from '../../styles/ThemeStyles';
 import Button from '../comps/Button/Button';
-import './Classes.scss'
-import SelectClass from './SelectClass'
+import './ClassDash.scss'
+
 import Notes from '../comps/Notes/Notes';
+import Calendar from '../comps/Calendar/Calendar'
+import CreateLesson from '../comps/Lesson/CreateLesson';
+
 
 
 function ClassDash(props) {
 
-
-  
-
-
   return (
-    <div style={{backgroundColor:theme.background}} >
-
+    <div >
+    <Header title={"Monday, Feb 4th"}  />
+    <div className="order">
+    <CreateLesson />
     <Notes />
+
+    <Calendar />
+    </div>
+    
 
     
     </div>

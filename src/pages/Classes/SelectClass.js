@@ -8,24 +8,24 @@ import Classes from './Classes'
 import ClassCard from '../comps/ClassCard/ClassCard';
 import '../comps/ClassCard/ClassCard.scss'
 
-function SelectClass({items,style},props) {
+function SelectClass(props) {
 
 
     var items = [
         {
           itemTitle:'English 4',
           style:"classcard-red",
-          onClick:()=>{props.showPage('ClassDash')}
+          // onClick:()=>{props.showPage('ClassDash')}
         },
         {
           itemTitle:'English 5',
           style:"classcard-blue",
-          onClick:()=>{props.showPage('ClassDash')}
+          // onClick:()=>{props.showPage('ClassDash')}
         },
         {
           itemTitle:'English 6',
           style:"classcard-purple",
-          onClick:()=>{props.showPage('ClassDash')}
+          // onClick:()=>{props.showPage('ClassDash')}
         },
       ]
 
@@ -43,10 +43,11 @@ function SelectClass({items,style},props) {
 
 
       {items.map((o,i)=>{
-                    return <ClassCard id={style}  onClick={() => props.setCont("ClassDash")} {...o} />
+                    return <ClassCard   onClick={() => props.setCont("ClassDash")} {...o} />
                 })}
           
       </div>
+      
 
       {/* <div className="button">
         <Button />

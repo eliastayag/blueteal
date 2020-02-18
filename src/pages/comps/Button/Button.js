@@ -5,7 +5,8 @@ function MainButton({ok,cancel,title}){
 
     var but = 'button button-active'
     return(
-        <div className={but} >{title}</div>
+        <div className="buttons" >{title}</div>
+
     )
 }
 

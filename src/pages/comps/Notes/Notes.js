@@ -7,18 +7,11 @@ function Notes(){
     return(
         <div className='notes'>
             <p className='notes-text'>Notes</p>
+            <input type="text" className="notesInput"/>
         </div>
     )
 }
 
-Notes.defaultProps = {
-    style:{
-        backgroundColor:"#FFF8C9",
-        height:"50vh",
-        width:"50vh",
-        padding:"5px",
-    // deprecated
-    }
-}
+
 
 export default Notes;

@@ -6,7 +6,7 @@ import './Header.scss';
 function Header({title,style}){
 
     return(
-        <div className='header'>
+        <div className='header' style={{style}}>
             {title}
         </div>
     )
@@ -14,6 +14,7 @@ function Header({title,style}){
 
 Header.defaultProps = {
     title:"Default Header",
+    style:"fontSize:"
 
 }
 

@@ -1,7 +1,7 @@
 @import '../../../styles/ThemeStyles.scss';
 
 
-.button {
+.buttons {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -13,4 +13,6 @@
     font-size:1em;
     color:#FAD;
     font-family: $niramit;
+    
 }
+

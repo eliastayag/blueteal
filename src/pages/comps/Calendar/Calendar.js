@@ -1,19 +1,31 @@
 import React from 'react';
 
+import './Calendar.scss'
 
 
-function Calendar({style}){
+function Calendar(){
     return(
-        <div style={style}>
-            <p>this is a calendar</p>
+        <div className="calendar">
+            {/* TITLE */}
+            <p>Calendar</p>
+
+            {/* YEAR */}
+            <p>Feburary 2020</p>
+            {/* DAYS */}
+            <div className="days">
+            <p>S</p>
+            <p>M</p>
+            <p>T</p>
+            <p>W</p>
+            <p>T</p>
+            <p>F</p>
+            <p>S</p>
+            </div>
+            {/* DAYS NUMBERS */}
         </div>
     )
 }
 
-Calendar.defaultProps = {
-    style:{
-        backgroundColor:"gainsboro"
-    }
-}
+
 
 export default Calendar;

@@ -11,7 +11,7 @@ import ClassDash from './ClassDash';
 function Classes(props) {
 
   var Content = null;
-  const [cont, setCont] = useState ('SelectClass');
+  const [cont, setCont] = useState ("SelectClass");
   
 
 
@@ -35,7 +35,7 @@ function Classes(props) {
 
 
   return (
-    <div >
+    <div>
 
     {Content}
 
