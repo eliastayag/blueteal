@@ -16,11 +16,12 @@ function Classes(props) {
 
 
   if(cont == 'SelectClass'){
-    Content = <SelectClass 
+    Content = <SelectClass
                 cont={cont}
                 setCont={setCont}
-                />
+    />
   }
+
 
   if(cont == 'ClassDash'){
     Content = <ClassDash

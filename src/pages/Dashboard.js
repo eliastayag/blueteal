@@ -79,7 +79,7 @@ function Dashboard() {
 
           <Menu items={items} />
 
-          <div className="settings">[settings]</div>
+          <div className="settings">settings</div>
         </div>
       </div>
 

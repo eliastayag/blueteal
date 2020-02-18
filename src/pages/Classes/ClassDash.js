@@ -5,6 +5,7 @@ import theme from '../../styles/ThemeStyles';
 import Button from '../comps/Button/Button';
 import './Classes.scss'
 import SelectClass from './SelectClass'
+import Notes from '../comps/Notes/Notes';
 
 
 function ClassDash(props) {
@@ -14,9 +15,9 @@ function ClassDash(props) {
 
 
   return (
-    <div style={{backgroundColor:theme.background}} onClick={() => props.setCont("SelectClass")}>
+    <div style={{backgroundColor:theme.background}} >
 
-    hello!
+    <Notes />
 
     
     </div>

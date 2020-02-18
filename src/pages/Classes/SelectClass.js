@@ -8,7 +8,7 @@ import Classes from './Classes'
 import ClassCard from '../comps/ClassCard/ClassCard';
 import '../comps/ClassCard/ClassCard.scss'
 
-function SelectClass({items,props,style}) {
+function SelectClass({items,style},props) {
 
 
     var items = [
@@ -32,10 +32,10 @@ function SelectClass({items,props,style}) {
 
 
   return (
-    <div className="body"  onClick={() => props.showPage("ClassDash")}>
+    <div className="body" >
 
       <div className="heading">
-      <Header title={"Classes"} />
+      <Header title={"Classes"}  />
       </div>
 
       <div className="cards">
@@ -43,7 +43,7 @@ function SelectClass({items,props,style}) {
 
 
       {items.map((o,i)=>{
-                    return <ClassCard id={style} {...o} />
+                    return <ClassCard id={style}  onClick={() => props.setCont("ClassDash")} {...o} />
                 })}
           
       </div>
