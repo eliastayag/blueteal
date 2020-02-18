@@ -70,7 +70,9 @@ function Dashboard() {
         id="left"
       >
         <div id="bottom">
-          <div className="t">[app icon nhere]</div>
+          <div className="t">
+            <img src={'../imgs/icons/png/t.thick.white.png'} />
+          </div>
 
           <Menu items={items} />
 
