@@ -7,6 +7,8 @@ import Schedule from "./Schedule/Schedule";
 import Menu from "./comps/Menu/Menu";
 import theme from "../styles/ThemeStyles";
 import "./DashboardStyles.scss";
+import UserIcon from './comps/User/UserIcon';
+import UserName from './comps/User/UserName';
 
 
 function Dashboard() {
@@ -83,7 +85,12 @@ function Dashboard() {
 
       <div id="right" className="column">
         <div class="top-right">
-          <div class="user">[username here][user icon here]</div>
+          <div class="user">
+
+            <UserName />
+            <UserIcon />
+            
+            </div>
         </div>
         <div class="bottom">{Content}</div>
       </div>
