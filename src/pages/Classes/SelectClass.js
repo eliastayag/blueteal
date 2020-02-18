@@ -8,20 +8,23 @@ import Classes from './Classes'
 import ClassCard from '../comps/ClassCard/ClassCard';
 
 
-function SelectClass({items,props}) {
+function SelectClass({items,props,style}) {
 
 
     var items = [
         {
           itemTitle:'English 4',
+          style:"classcard-red",
           onClick:()=>{props.showPage('ClassDash')}
         },
         {
           itemTitle:'English 5',
+          style:"classcard-blue",
           onClick:()=>{props.showPage('ClassDash')}
         },
         {
           itemTitle:'English 6',
+          style:"classcard-purple",
           onClick:()=>{props.showPage('ClassDash')}
         },
       ]
@@ -40,7 +43,7 @@ function SelectClass({items,props}) {
 
 
       {items.map((o,i)=>{
-                    return <ClassCard  {...o} />
+                    return <ClassCard  className={style} {...o} />
                 })}
           
       </div>

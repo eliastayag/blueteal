@@ -18,10 +18,11 @@ export const DefaultClasses = () =>{
 export const SelectClasses = () =>{
   return <SelectClass />;
 }
-export const ClassDashboard = () =>{
-  return <ClassDash />;
-}
 export const DefaultDashboard = () =>{
   return <App />;
 }
+export const ClassDashboard = () =>{
+  return <ClassDash />;
+}
+
 
