@@ -6,7 +6,7 @@ import './Notes.scss'
 function Notes(){
     return(
         <div className='notes'>
-            <p>Notes</p>
+            <p className='notes-text'>Notes</p>
         </div>
     )
 }

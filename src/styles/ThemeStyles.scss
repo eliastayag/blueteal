@@ -1,5 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Niramit&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Niramit&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 
-$Niramit: 'Niramit';
-$Roboto: 'Roboto';
+// App Colors
+
+$lightGreen:#B3D8CF !default;
+$green:#68B2A0 !default;
+$darkGreen:#448C7A !default;
+$orangeRed:#F06666 !default;
+$orangeRedFaded:rgba(240, 102, 102, 0.6) !default;
+$lightBlue:#BEDDEE !default;
+$cream:rgba(255, 248, 201, 0.9) !default;
+
+
+$white:#FFFFFF !default;
+$appBlack:#0f0f0f !default;
+$blueGray:#E2E8EF !default;
+$lightGray:#EAEAEA !default;
+$darkGray:#555555 !default;
+$darkerGray:#656565 !default;
+$gray:#AAAAAA !default;
+
+$background: #E5E5E5 !default;
+
+
+// Fonts
+$niramit: 'Niramit' !default;
+$roboto: 'Roboto' !default;

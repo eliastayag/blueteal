@@ -1,11 +1,16 @@
+@import '../../../styles/ThemeStyles.scss';
+
+
 .button {
-    background-color:"white";
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width:155px;
     height:50px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #BAD;
     box-sizing: border-box;
     border-radius: 30px;
     font-size:1em;
-    color:green;
-    font-family: sans-serif;
+    color:#FAD;
+    font-family: $niramit;
 }

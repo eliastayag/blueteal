@@ -1,3 +1,6 @@
+// currently in the process of converting this page into .scss
+// lowkey useless rn lol
+
 const theme = {
 
     // Colours
@@ -17,13 +20,8 @@ const theme = {
     darkGray:'#555555',
     darkerGray:'#656565',
     gray:'#AAAAAA',
-
-
     background: '#E5E5E5',
 
-    
-    
-    
     
     // Fonts
     NiranitRegular:'Niramit-Regular',

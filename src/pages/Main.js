@@ -23,7 +23,7 @@ function Main() {
     if(showpage == 'Dashboard'){
         page = <Dashboard 
                 />;
-    }
+    } 
 
 
 

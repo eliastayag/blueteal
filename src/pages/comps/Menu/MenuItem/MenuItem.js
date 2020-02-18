@@ -7,7 +7,7 @@ function MenuItem({itemTitle,onClick,active}){
         cn = "menu_item menu_item_active"
     }
     return(
-        <div onClick={onClick}>
+        <div  className onClick={onClick}>
             {itemTitle}
         </div>
     )
