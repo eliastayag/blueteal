@@ -1,12 +1,12 @@
 import React from 'react';
-import './UserIcon.scss'
+import './UserName.scss'
 
 
 
 function UserName(){
     return(
         <div>
-            <p>Ramin Shadmehr</p>
+            {/* <p className='username'>Ramin Shadmehr</p> */}
         </div>
     )
 }

@@ -1,12 +1,13 @@
 import React from 'react';
-import './UserIcon.scss'
+import './UserIcon.scss';
 
 
 
 function UserIcon(){
     return(
-        <div>
-             <img src={require('../../../imgs/ramin.png')}/>
+        <div className='user'>
+             <p> Ramin Shadmehr </p>
+             <img className='userimg' src={require('../../../imgs/ramin.png')}/>
         </div>
     )
 }

@@ -1,0 +1,18 @@
+@import '../../../styles/ThemeStyles.scss';
+
+.user {
+    display:flex;
+    flex-direction: row;
+    width:250px;
+    font-family: $niramit;
+    font-size: 1.1rem;
+    right:0px;
+
+}
+
+.userimg {
+    border-radius: 8px;
+    width:70px;
+    height:70px;
+    margin-left:10px;
+}
