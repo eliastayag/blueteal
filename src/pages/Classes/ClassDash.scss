@@ -1,2 +1,19 @@
 
+.order{
+    display: flex;
+}
 
+
+.left{
+    // background-color: #FAB;
+    flex:1;
+}
+.right{
+    // background-color: #DAD;
+    flex:1;
+    padding-left: 20px;
+}
+
+#topright{
+    margin-bottom: 20px;
+}

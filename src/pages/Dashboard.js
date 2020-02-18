@@ -90,7 +90,7 @@ function Dashboard() {
           <Menu items={items} />
 
           <div className="settings">
-          <img className="cog" src={require('../imgs/icons/png/gear.black.png')}/>
+          <img className="cog" src={require('../imgs/icons/png/gear.white.png')}/>
 
           </div>
         </div>
@@ -106,7 +106,8 @@ function Dashboard() {
             </div>
         </div>
         <div class="bottom">{Content}</div>
-      </div>
+        {/* <img classname="bigplus" src={require('../imgs/icons/png/plusicon.yellow.png')}/>    */}
+           </div>
     </div>
   );
 }

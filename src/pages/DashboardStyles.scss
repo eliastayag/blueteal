@@ -12,6 +12,7 @@
     flex-direction: column;  /*places the left and right headers above the bottom content*/
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
 }
 
 #left {
@@ -65,7 +66,8 @@
     justify-content: center;
 }
 .t-logo {
-    width:70px;
+    width:60px;
+    margin-left: -30px;
 }
 
 .settings{
@@ -78,4 +80,8 @@
 .cog {
 
     width: 1.6vw;
+}
+
+.bigplus{
+    width:50px;
 }

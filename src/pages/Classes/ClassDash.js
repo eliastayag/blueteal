@@ -16,11 +16,19 @@ function ClassDash(props) {
   return (
     <div >
     <Header title={"Monday, Feb 4th"}  />
-    <div className="order">
-    <CreateLesson />
-    <Notes />
 
+    <div className="order">
+      <div className="left">
+    <CreateLesson />
+    </div>
+    <div className="right">
+      <div id="topright">
+    <Notes />
+    </div>
+    <div id="bottomright">
     <Calendar />
+    </div>
+    </div>
     </div>
     
 
