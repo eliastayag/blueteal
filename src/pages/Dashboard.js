@@ -63,7 +63,7 @@ function Dashboard() {
   ];
 
   return (
-    <div className="body" style={{ backgroundColor: theme.background }}>
+    <div className="body">
       <div
         style={{ backgroundColor: theme.green }}
         className="column"

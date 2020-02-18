@@ -1,10 +1,11 @@
 import React from 'react';
+import './ClassCard.scss'
 
 
 
 function ClassCard({style}){
     return(
-        <div style={style}>
+        <div className='classcard' style={style}>
             <p>[box image]</p>
         </div>
     )
