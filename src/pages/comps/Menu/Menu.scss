@@ -1,17 +1,30 @@
 @import '../../../styles/ThemeStyles.scss';
 
 
-#item_count {
+
+.menu-container {
     display:flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
     border-radius: 0px 15px 15px 0px;
-    height: 50vh;
-    width: 15vw;
-    background-color: #68B2A0;
-    justify-content:space-around;
-    align-items: center;
-    font-size:1.5rem;
+    height: 65vh;
+    width: 300px;
+    background-color: $green;
+    font-size:2rem;
     font-family:$niramit;
     color:white;
+
+    &:hover {
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: $darkGreen;
+        transition-property: $darkGreen;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
     
 }

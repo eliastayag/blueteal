@@ -83,8 +83,8 @@ function Dashboard() {
         id="left"
       >
         <div id="bottom">
-          <div className="t">
-            <img src={require('../imgs/icons/png/t.thin.white.png')}/>
+          <div className="t-div">
+            <img className='t-logo' src={require('../imgs/icons/png/t.thin.white.png')}/>
           </div>
 
           <Menu items={items} />

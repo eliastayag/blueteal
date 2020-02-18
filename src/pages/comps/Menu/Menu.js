@@ -4,7 +4,7 @@ import './Menu.scss';
 
 function MainMenu({items, menuTitle}){
     return(
-        <div>
+        <div className='menu-container'>
             <div id="item_count">
                 {items.map((o,i)=>{
                         return <MenuItem {...o} />

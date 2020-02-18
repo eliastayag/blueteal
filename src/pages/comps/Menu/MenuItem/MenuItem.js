@@ -1,13 +1,15 @@
 import React from 'react';
 import './MenuItem.scss'
 
+
 function MenuItem({itemTitle,onClick,active}){
+    
     var cn="menu_item";
     if (active){
         cn = "menu_item menu_item_active"
     }
     return(
-        <div  className onClick={onClick}>
+        <div  className='menuitem' onClick={onClick}>
             {itemTitle}
         </div>
     )
