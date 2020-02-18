@@ -1,22 +1,17 @@
 import React from 'react';
+import './AddButton.scss';
 
 function MainButton({ok,cancel,title}){
+
+    var but = 'button button-active'
     return(
-        <div style={ok}>{title}</div>
+        <div className={but} >{title}</div>
     )
 }
 
 MainButton.defaultProps = {
     title:"OK",
-    ok:{
-        backgroundColor:"white",
-        color:"#68B2A0",
-        width:"83px",
-        height:"23px",
-        borderRadius:"14px",
-        padding:"2px",
-        fontSize:"3vh"
-    }
+   
 }
 
 export default MainButton;

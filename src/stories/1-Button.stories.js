@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Button } from '@storybook/react/demo';
 import MainButton from '../pages/comps/Button/Button';
+import '../styles/ThemeStyles.scss';
 
 
 
@@ -11,14 +12,18 @@ export default {
 };
 
 export const DefaultButton= () =>{
-  return <MainButton />;
+  return <MainButton
+  title='Default Button'
+   />;
 }
 
 export const PopupButton = () =>{
-  return <MainButton />;
+  return <MainButton
+  title='Popup Button' />;
 }
 
 export const AddButton = () =>{
-  return <MainButton />;
+  return <MainButton
+  title='Add Button' />;
 }
 

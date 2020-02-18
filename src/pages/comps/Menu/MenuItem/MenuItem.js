@@ -1,4 +1,5 @@
 import React from 'react';
+import './MenuItem.scss'
 
 function MenuItem({itemTitle,onClick,active}){
     var cn="menu_item";

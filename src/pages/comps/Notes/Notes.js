@@ -1,11 +1,12 @@
 import React from 'react';
+import './Notes.scss'
 
 
 
-function Notes({style}){
+function Notes(){
     return(
-        <div style={style}>
-            <p>notes!</p>
+        <div className='notes'>
+            <p>Notes</p>
         </div>
     )
 }
@@ -16,6 +17,7 @@ Notes.defaultProps = {
         height:"50vh",
         width:"50vh",
         padding:"5px",
+    // deprecated
     }
 }
 

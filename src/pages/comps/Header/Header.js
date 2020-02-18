@@ -1,10 +1,12 @@
 import React from 'react';
+import './Header.scss';
 
 
 
 function Header({title,style}){
+
     return(
-        <div style={style}>
+        <div className='header'>
             {title}
         </div>
     )
