@@ -1,15 +1,28 @@
 @import '../../../styles/ThemeStyles.scss';
 
 
-.classcard {
+.classcard-red{
+    background: linear-gradient(139.81deg, #E45C5C 17.88%, #DE2B2B 96.49%);
+}
+.classcard-blue{
+    background: linear-gradient(139.81deg, #2E97D1 17.88%, #39559D 96.49%);
+}
+.classcard-purple{
+    background: linear-gradient(139.81deg, #7A4BFF 19.51%, #54399F 96.49%);
+}
+
+
+
+.classcard-1 {
     font-family: $niramit;
     color:white;
     font-size: $card-size;
     display:flex;
-    justify-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(139.81deg, #E45C5C 17.88%, #DE2B2B 96.49%);
-    border-radius: 10px;
+    justify-content: space-around;
     height:200px;
     width:170px;
+    margin:10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
 }

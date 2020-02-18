@@ -5,7 +5,7 @@ import './ClassCard.scss'
 
 function ClassCard({itemTitle,onClick,active}){
     return(
-        <div className='classcard' onClick={onClick} style={{display:"flex",alignItems:"center", paddingLeft:"5vw",paddingRight:"5vw"}}>
+        <div className='classcard' onClick={onClick} >
             {itemTitle}
         </div>
 
