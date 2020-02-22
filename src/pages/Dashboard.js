@@ -10,30 +10,79 @@ import theme from "../styles/ThemeStyles";
 import "./DashboardStyles.scss";
 import UserIcon from './comps/User/UserIcon';
 import UserName from './comps/User/UserName';
+import Upgrade from './Upgrade/Upgrade';
+import Header from './comps/Header/Header';
+import ClassDash from './Classes/ClassDash';
 
 
-function Dashboard() {
+function Dashboard(props) {
   //cont is default to Home.js
   var Content = null;
   const [cont, setCont] = useState("Classes");
-
+  const [name, setName] = useState("Classes");
   if (cont == "Home") {
-    Content =  <Home />;
+    Content = <Home 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+    />;
   }
   if (cont == "Classes") {
-    Content = <Classes />;
+    Content = <Classes 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
   }
+  if (cont == "Classes1") {
+    Content = <ClassDash 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
+  }
+  
   if (cont == "Schedule") {
-    Content = <Schedule />;
+    Content = <Schedule 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
   }
   if (cont == "Performance") {
-    Content = <Performance />;
+    Content = <Performance 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
   }
   if (cont == "Notes") {
-    Content = <Notes />;
+    Content = <Notes 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
   }
   if (cont == "Forums") {
-    Content = <Forums />;
+    Content = <Forums 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
+  }
+  if (cont == "Upgrade") {
+    Content = <Upgrade 
+              cont={cont}
+              setCont={setCont}
+              setName={setName}
+
+    />;
   }
 
 
@@ -42,38 +91,58 @@ function Dashboard() {
       itemTitle: "Home",
       onClick: () => {
         setCont("Home");
+        setName("Home");
       }
     },
     {
       itemTitle: "Classes",
       onClick: () => {
         setCont("Classes");
+        setName("Classes");
+
       }
     },
     {
       itemTitle: "Schedule",
       onClick: () => {
         setCont("Schedule");
+        setName("Schedule");
+
       }
     },
     {
       itemTitle: "Performance",
       onClick: () => {
         setCont("Performance");
+        setName("Performance");
+
       }
     },
     {
       itemTitle: "Notes",
       onClick: () => {
         setCont("Notes");
+        setName("Notes");
+
       }
     },
     {
       itemTitle: "Forums",
       onClick: () => {
         setCont("Forums");
+        setName("Forums");
+
       }
+    },
+    {
+      itemTitle: "Upgrade",
+      onClick: () => {
+        setCont("Upgrade");
+        setName("Upgrade");
+
+      },
     }
+  
   ];
 
   return (
@@ -107,21 +176,19 @@ function Dashboard() {
           <img className="cog" src={require('../imgs/icons/png/gear.white.png')}/>
 
           </div>
-        </div>
-      </div>
 
-      <div id="right" className="column">
-        <div class="top-right">
-          <div class="user">
+        <div class="right-content">
+          <div class="top-right">
+          <div style={{ position:"absolute",top:"15vh",marginBottom:"5vh",textAlign:"center"}}>
+            <Header title={name}/>
+          </div>
+          </div>
+          <div className="bottom-right">
+          {Content}
+          </div>
 
-            <UserName />
-            <UserIcon />
-            
-            </div>
         </div>
-        <div class="bottom">{Content}</div>
-        {/* <img classname="bigplus" src={require('../imgs/icons/png/plusicon.yellow.png')}/>    */}
-           </div>
+
     </div>
   );
 }

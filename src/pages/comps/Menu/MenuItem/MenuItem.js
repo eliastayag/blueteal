@@ -10,7 +10,7 @@ function MenuItem({itemTitle,onClick,active}){
     }
     return(
         <div  className='menuitem' onClick={onClick}>
-            {itemTitle}
+            {itemTitle} 
         </div>
     )
 }

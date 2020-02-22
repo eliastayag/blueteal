@@ -10,11 +10,9 @@ import Button from '../comps/Button/Button';
 function Schedule() {
     
   return (
-    <div className="body" style={{backgroundColor:theme.background}}>
+    <div >
 
-      <div className="heading">
-      <Header title={"Schedule"}/>
-      </div>
+
 
     
     </div>

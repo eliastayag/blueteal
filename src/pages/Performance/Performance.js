@@ -10,11 +10,11 @@ import Button from '../comps/Button/Button';
 function Performance() {
     
   return (
-    <div className="body" style={{backgroundColor:theme.background}}>
+    <div>
 
-      <div className="heading">
-      <Header title={"Performance"}/>
-      </div>
+    
+
+
 
     
     </div>

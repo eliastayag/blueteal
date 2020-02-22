@@ -4,9 +4,9 @@ import './ClassCard.scss'
 
 
 
-function ClassCard({itemTitle,onClick,active,style}){
+function ClassCard({itemTitle,onClick,active,style,props}){
     return(
-        <div className='classcard-1' id={style} onClick={onClick} >
+        <div className='classcard-1' id={style} onClick={onClick}>
             <img className='classcard-book' src={require('../../../imgs/icons/png/book.fill.white.png')}/>
 
             {itemTitle}

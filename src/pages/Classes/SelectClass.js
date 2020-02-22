@@ -32,28 +32,17 @@ function SelectClass(props) {
 
 
   return (
-    <div className="body" >
 
-      <div className="heading">
-      <Header title={"Classes"}  />
-      </div>
+       <div className="selectClass-body">
 
-      <div className="cards">
-
-
-
+      <div className="select-cards">
       {items.map((o,i)=>{
-                    return <ClassCard   onClick={() => props.setCont("ClassDash")} {...o} />
+                    return <ClassCard  setCont={props.setCont} onClick={() => { props.setComp("ClassDash"); props.setCont("Classes1"); props.setName("Monday, Feb 24th")}} {...o} />
                 })}
-          
-      </div>
-      
 
-      {/* <div className="button">
-        <Button />
-      </div> */}
-    
-    </div>
+      </div>
+      <img className="new-class" src={require('../../imgs/icons/png/plusicon.red.png')}/>    
+      </div>
 
   );
 }

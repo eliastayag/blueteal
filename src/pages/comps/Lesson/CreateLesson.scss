@@ -1,13 +1,13 @@
 @import '../../../styles/ThemeStyles.scss';
 
 
-.box {
+.create-box {
     background-color: #F6F6F6;
-    width: 535px;
-    height: 550px;
+    width: 60vw;
+    height: 70vh;
     border-radius: 10px;
     font-family: $niramit;
-    
+    margin: 10px;
 }
 
 .top {

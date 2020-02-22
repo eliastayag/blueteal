@@ -1,8 +1,20 @@
-
-
-.menuitem { 
-    
-    &:hover {
-     
-    }
+.menuitem:hover {
+    background-color: #448C7A;
+    border-radius: 0 50px 50px 0px;
 }
+
+.menuitem:last-child {
+    color: gold;
+}
+
+.menuitem {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+
+
+}
+
+
+

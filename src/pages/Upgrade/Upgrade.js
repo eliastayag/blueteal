@@ -7,16 +7,11 @@ import Button from '../comps/Button/Button';
 
 
 
-
-function Home() {
+function Upgrade() {
     
   return (
-    <div>
+    <div >
 
-      <div className="heading" >
-      
-      <Header title={"Home"}/>
-      </div>
 
     
     </div>
@@ -24,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Upgrade;

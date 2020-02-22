@@ -8,11 +8,9 @@ import Button from '../Button/Button';
 
 function CreateLesson(){
     return(
-        <div className='box'>
-
+        <div className='create-box'>
             <div className='top'>
-                <Header title={"English 6"} />
-
+                <Header title={"English 6"}/>
             </div>
 
             <div className='bot'>

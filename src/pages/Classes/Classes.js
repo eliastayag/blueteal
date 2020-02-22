@@ -11,22 +11,29 @@ import ClassDash from './ClassDash';
 function Classes(props) {
 
   var Content = null;
-  const [cont, setCont] = useState ("SelectClass");
+  const [comp, setComp] = useState ("SelectClass");
   
 
 
-  if(cont == 'SelectClass'){
+  if(comp == 'SelectClass'){
     Content = <SelectClass
-                cont={cont}
-                setCont={setCont}
+                comp={comp}
+                setComp={setComp}
+                setName={props.setName}
+                setCont={props.setCont}
+
     />
   }
 
 
-  if(cont == 'ClassDash'){
+  if(comp == 'ClassDash'){
     Content = <ClassDash
-                cont={cont}
-                setCont={setCont}
+                comp={comp}
+                setComp={setComp}
+                setName={props.setName}
+                setCont={props.setCont}
+
+
     />
   }
 
