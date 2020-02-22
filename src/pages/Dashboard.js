@@ -18,7 +18,7 @@ function Dashboard() {
   const [cont, setCont] = useState("Classes");
 
   if (cont == "Home") {
-    Content = <Home />;
+    Content =  <Home />;
   }
   if (cont == "Classes") {
     Content = <Classes />;
@@ -35,6 +35,7 @@ function Dashboard() {
   if (cont == "Forums") {
     Content = <Forums />;
   }
+
 
   var items = [
     {
@@ -86,9 +87,22 @@ function Dashboard() {
           <div className="t-div">
             <img className='t-logo' src={require('../imgs/icons/png/t.thin.white.png')}/>
           </div>
+<div className="menu">
 
-          <Menu items={items} />
+<div id="menuLeft">
+<img src={require("../imgs/icons/png/home.fill.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/book.fill.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/calendar.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/star.fill.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/pen.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/doc.white.png")} className="icons" id="docIcon"/>
+</div>
+<div  id="menuRight">
+<Menu items={items} />
 
+</div>
+
+          </div>
           <div className="settings">
           <img className="cog" src={require('../imgs/icons/png/gear.white.png')}/>
 

@@ -17,3 +17,24 @@
 #topright{
     margin-bottom: 20px;
 }
+
+.dateheader{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    // background-color: #FAB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chevrons{
+    width: 15px;
+    height: 25px;
+    margin-bottom: -10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header{
+    margin-left: 20px;
+}

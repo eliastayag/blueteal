@@ -15,7 +15,12 @@ function ClassDash(props) {
 
   return (
     <div >
+      <div className="dateheader">
+        <img src={require("../../imgs/icons/png/chevron.left.black.png")} className="chevrons"/>
     <Header title={"Monday, Feb 4th"}  />
+    <img src={require("../../imgs/icons/png/chevron.right.black.png")} className="chevrons"/>
+
+    </div>
 
     <div className="order">
       <div className="left">

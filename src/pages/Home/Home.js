@@ -12,7 +12,8 @@ function Home() {
   return (
     <div className="body" style={{backgroundColor:theme.background}}>
 
-      <div className="heading">
+      <div className="heading" >
+      
       <Header title={"Home"}/>
       </div>
 

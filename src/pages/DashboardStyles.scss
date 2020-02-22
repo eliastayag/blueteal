@@ -52,6 +52,8 @@
 .heading {
     align-items: center;
     margin-top: 10vh;
+    // margin-bottom: -350px;
+    // background-color: #FAB;
 }
 
 .button {
@@ -79,9 +81,42 @@
 
 .cog {
 
-    width: 1.6vw;
+    width: 3vw;
 }
 
 .bigplus{
     width:50px;
+}
+
+.menu{
+    display: flex;
+    // background-color: #FAB;
+}
+
+#menuLeft{
+    flex: 1;
+    // background-color: #DAD;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin-right:15px;
+}
+
+#menuRight{
+    flex: 3;
+}
+
+.icons{
+    width:37px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+#docIcon{
+    width:32px;
+}
+
+.cards{
+    // background-color: #FAB;
+    margin-top: 250px;
 }

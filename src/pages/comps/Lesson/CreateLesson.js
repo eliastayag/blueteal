@@ -16,10 +16,9 @@ function CreateLesson(){
             </div>
 
             <div className='bot'>
-                <img src={require('../../../imgs/icons/png/pen.green.png')}/>
-                <p>No lessons here, make a new one!</p>
-                <Button title={"New Lesson"}/>
-
+                <img src={require('../../../imgs/icons/png/pen.green.png')} id="pen"/>
+                <p id="ds">No lessons here, make a new one!</p>
+                <Button id="button" title={"New Lesson"}/>
             </div>
         </div>
     )

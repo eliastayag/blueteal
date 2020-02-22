@@ -17,11 +17,19 @@
 }
 
 .bot {
-    height:30vh;
+    height:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: center;
+}
 
+#pen{
+    width:  70px;
+    margin-bottom:30px;
+    margin-top: -90px;
+}
+
+#ds{
+    margin-bottom:30px;
 }
