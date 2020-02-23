@@ -13,10 +13,6 @@ function Home() {
   return (
     <div>
 
-      <div className="heading" >
-      
-      <Header title={"Home"}/>
-      </div>
 
     
     </div>

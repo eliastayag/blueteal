@@ -7,10 +7,10 @@ function Calendar(){
     return(
         <div className="calendar">
             {/* TITLE */}
-            {/* <p>Calendar</p> */}
+            <p>Calendar</p>
             {/* YEAR */}
-            {/* <p>Feburary 2020</p> */}
-            {/* DAYS
+            <p>Feburary 2020</p>
+            {/* DAYS */}
             <div className="days">
             <p>S</p>
             <p>M</p>
@@ -19,9 +19,8 @@ function Calendar(){
             <p>T</p>
             <p>F</p>
             <p>S</p>
-            </div> */}
+            </div>
             {/* DAYS NUMBERS */}
-            <img src={require('../../../imgs/Calendar.png')}  id="calendar"/>
         </div>
     )
 }

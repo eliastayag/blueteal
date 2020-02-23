@@ -13,77 +13,27 @@
 
 .right-content {
     flex: 4;
-    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    flex-direction: column;
 }
 
-.user {
-    position: absolute;
-    right: 20vw;
-    top: 20px;
-}
+// .user {
+//     position: absolute;
+//     right: 20vw;
+//     top: 20px;
+// }
 
-.heading {
-    align-items: center;
-    margin-top: 10vh;
-    // margin-bottom: -350px;
-    // background-color: #FAB;
-}
 
 .dash-menu {
-    // flex: 1; why does it put a margin??
-    display: flex;
-
-
+    flex: 1; 
 }
 
-.cog {
-
-    width: 3vw;
-}
-
-.bigplus{
-    width:50px;
-}
-
-.menu{
-    display: flex;
-    // background-color: #FAB;
-}
-
-#menuLeft{
-    flex: 1;
-    // background-color: #DAD;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    margin-right:15px;
-}
-
-#menuRight{
-    flex: 3;
-}
-
-.icons{
-    width:37px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-#docIcon{
-    width:32px;
-}
-
-.cards{
-    // background-color: #FAB;
-    margin-top: 250px;
-}
-.top-right {
-    text-align: center;
+.dash-header {
+    position: absolute;
+    top: 15vh;
 }
 
 

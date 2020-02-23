@@ -5,20 +5,20 @@ import './Menu.scss';
 function MainMenu({items, menuTitle}){
     return(
         <div className="menu-body">
-            <div className="body-body">
-            <div className="t-div">
-                <img src={require('../../../imgs/icons/png/t.thin.white.png')}/>
-            </div>
+
 
         <div className='menu-container'>
+                            <div className="menu-logo">
+                
+
+                </div>
             {items.map((o,i)=>{
                 return <MenuItem {...o} />
             })}
         </div>
         
-        <img className="cog" src={require('../../../imgs/icons/png/gear.white.png')}/>
+        <img className="menu-cog" src={require('../../../imgs/icons/png/gear.white.png')}/>
 
-        </div>
         </div>
     
     )

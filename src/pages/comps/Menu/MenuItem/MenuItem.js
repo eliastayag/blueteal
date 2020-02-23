@@ -9,8 +9,10 @@ function MenuItem({itemTitle,onClick,active}){
         cn = "menu_item menu_item_active"
     }
     return(
+        <div className="menuitem-body">
         <div  className='menuitem' onClick={onClick}>
             {itemTitle} 
+        </div>
         </div>
     )
 }

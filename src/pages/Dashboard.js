@@ -85,7 +85,6 @@ function Dashboard(props) {
     />;
   }
 
-
   var items = [
     {
       itemTitle: "Home",
@@ -146,47 +145,16 @@ function Dashboard(props) {
   ];
 
   return (
-    <div className="body">
-      <div
-        style={{ backgroundColor: theme.green }}
-        className="column"
-        id="left"
-      >
-        <div id="bottom">
-          <div className="t-div">
-            <img className='t-logo' src={require('../imgs/icons/png/t.thin.white.png')}/>
-          </div>
-<div className="menu">
-
-<div id="menuLeft">
-<img src={require("../imgs/icons/png/home.fill.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/book.fill.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/calendar.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/star.fill.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/pen.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/doc.white.png")} className="icons" id="docIcon"/>
-</div>
-<div  id="menuRight">
-<Menu items={items} />
-
-</div>
-
-          </div>
-          <div className="settings">
-          <img className="cog" src={require('../imgs/icons/png/gear.white.png')}/>
-
-          </div>
-
+    <div className="DashBody">
+      <div className="dash-menu">
+      <Menu items={items} />
+      </div>
         <div class="right-content">
-          <div class="top-right">
-          <div style={{ position:"absolute",top:"15vh",marginBottom:"5vh",textAlign:"center"}}>
-            <Header title={name}/>
-          </div>
-          </div>
-          <div className="bottom-right">
-          {Content}
-          </div>
+          <div className="dash-header">
+          <Header title={name}/>
 
+          </div>
+          {Content}
         </div>
 
     </div>

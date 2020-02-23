@@ -8,33 +8,36 @@
     line-height: 2;
     font-family:$niramit;
     color:white; 
-    background-color: $green;
     height: 100vh;
     flex-direction: column;
-    border-radius: 0px 15px 15px 0; 
-    margin: 0;
-    width: 300px;
+
 
 }
 
-.cog {
+.menu-logo{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.menu-cog {
     position: absolute;
     bottom: 1.8vh;
     left: 1.8vh;
-    width: 2.7vw;
+    width: 30px
 }
 
-.t-div {
-position: absolute;
-top: 8vh;
-}
+
 
 .menu-body {
     display: flex;
-    margin: 0;
+    background-color: $green;
+    border-radius: 0px 15px 15px 0; 
+    width: 100%;
+    justify-content: center;
+
+
 }
 
-.body-body {
-    display: flex;
-    justify-content: center;
-}
