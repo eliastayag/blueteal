@@ -3,11 +3,13 @@
 
 .create-box {
     background-color: #F6F6F6;
-    width: 60vw;
-    height: 70vh;
+    width: 650px;
+    height: 635px;
     border-radius: 10px;
     font-family: $niramit;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .top {
@@ -17,11 +19,27 @@
 }
 
 .bot {
-    height:30vh;
+    // height:30vh;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    height: 100%;
+    margin-top: 90px;
+
+
     
+}
+
+.create-pen-green{
+    width: 130px;
 
 }
+
+.create-box-p{
+    font-size: 1.5rem;
+}
+
+.bot > *{
+    margin: 1.5vh;
+}
+

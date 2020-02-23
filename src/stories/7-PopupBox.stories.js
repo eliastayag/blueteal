@@ -1,15 +1,15 @@
 import React from 'react';
-import PopupBox from '../pages/comps/PopupBox/PopupBox';
+import Popup from '../pages/Popup';
 
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'PopupBox',
-  component: PopupBox,
+  title: 'Popup',
+  component: Popup,
 };
 
 export const DefaultPopupBox = () =>{
-    return <PopupBox />;
+    return <Popup />;
 }
 
 

@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 
 
-function CreateLesson(){
+function CreateLesson(props){
     return(
         <div className='create-box'>
             <div className='top'>
@@ -14,8 +14,8 @@ function CreateLesson(){
             </div>
 
             <div className='bot'>
-                <img src={require('../../../imgs/icons/png/pen.green.png')}/>
-                <p>No lessons here, make a new one!</p>
+                <img className="create-pen-green" src={require('../../../imgs/icons/png/pen.green.png')}/>
+                <p className="create-box-p">No lessons here, make a new one!</p>
                 <Button title={"New Lesson"}/>
 
             </div>

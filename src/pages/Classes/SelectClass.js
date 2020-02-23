@@ -41,7 +41,7 @@ function SelectClass(props) {
                 })}
 
       </div>
-      <img className="new-class" src={require('../../imgs/icons/png/plusicon.red.png')}/>    
+      <img onClick={()=>{ props.showPop("NewClass");}} className="new-class" src={require('../../imgs/icons/png/plusicon.red.png')}/>    
       </div>
 
   );

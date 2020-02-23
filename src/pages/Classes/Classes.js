@@ -21,6 +21,7 @@ function Classes(props) {
                 setComp={setComp}
                 setName={props.setName}
                 setCont={props.setCont}
+                showPop={props.showPop}
 
     />
   }
@@ -32,6 +33,8 @@ function Classes(props) {
                 setComp={setComp}
                 setName={props.setName}
                 setCont={props.setCont}
+                showPop={props.showPop}
+
 
 
     />

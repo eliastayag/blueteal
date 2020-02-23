@@ -14,25 +14,12 @@ import CreateLesson from '../comps/Lesson/CreateLesson';
 function ClassDash(props) {
 
   return (
-    <div >
-    {/* <Header title={"Monday, Feb 4th"}  /> */}
-
-    <div className="order">
-      <div className="left">
-    <CreateLesson />
-    </div>
-    <div className="right">
-      <div id="topright">
-    <Notes />
-    </div>
-    <div id="bottomright">
-    <Calendar />
-    </div>
-    </div>
-    </div>
-    
-
-    
+    <div className="classdash-body">
+            <CreateLesson />
+      <div className="notes-calendar-div">
+      <Notes />
+      <img className="classdash-calendar" src={require('../../imgs/Calendar.png')}/>
+      </div>  
     </div>
 
   );

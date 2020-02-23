@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuItem from './MenuItem/MenuItem';
+import UserIcon from '../User/UserIcon';
 import './Menu.scss';
 
 function MainMenu({items, menuTitle}){
@@ -8,9 +9,8 @@ function MainMenu({items, menuTitle}){
 
 
         <div className='menu-container'>
-                            <div className="menu-logo">
-                
-
+                 <div className="menu-logo">
+                    <UserIcon />
                 </div>
             {items.map((o,i)=>{
                 return <MenuItem {...o} />

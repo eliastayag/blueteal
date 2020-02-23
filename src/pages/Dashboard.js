@@ -25,6 +25,7 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+
     />;
   }
   if (cont == "Classes") {
@@ -32,6 +33,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
@@ -40,6 +43,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
@@ -49,6 +54,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
@@ -57,6 +64,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
@@ -65,6 +74,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
@@ -73,6 +84,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
@@ -81,6 +94,8 @@ function Dashboard(props) {
               cont={cont}
               setCont={setCont}
               setName={setName}
+              showPop={props.showPop}
+
 
     />;
   }
