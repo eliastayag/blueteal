@@ -15,7 +15,7 @@ function ClassDash(props) {
 
   return (
     <div className="classdash-body">
-            <CreateLesson />
+            <CreateLesson showPop={props.showPop}/>
       <div className="notes-calendar-div">
       <Notes />
       <img className="classdash-calendar" src={require('../../imgs/Calendar.png')}/>

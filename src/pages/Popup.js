@@ -27,6 +27,23 @@ function Popup(props) {
     )
     }
 
+    if (props.pop == "NewLesson"){
+        poptitle = "Select a Template"
+
+        content = (
+            <div className="NewClass-popup">
+            
+
+            <div className="popup-buttons">
+            <Button onClick={() => { props.showPop("")}} title={"Cancel"} />
+            <Button title={"OK"}/>
+            </div>
+
+        </div>
+            
+        )
+    }
+
   return (
 
     <div className="popup-background">
