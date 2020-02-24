@@ -13,13 +13,16 @@ import UserName from './comps/User/UserName';
 import Upgrade from './Upgrade/Upgrade';
 import Header from './comps/Header/Header';
 import ClassDash from './Classes/ClassDash';
+import SelectClass from './Classes/SelectClass';
 
 
 function Dashboard(props) {
   //cont is default to Home.js
   var Content = null;
-  const [cont, setCont] = useState("Classes");
-  const [name, setName] = useState("Classes");
+  const [cont, setCont] = useState("Home");
+  const [name, setName] = useState("Home");
+  const [classesname, setClassesName] = useState(null);
+
   if (cont == "Home") {
     Content = <Home 
               cont={cont}
@@ -28,22 +31,26 @@ function Dashboard(props) {
 
     />;
   }
-  if (cont == "Classes") {
-    Content = <Classes 
+  if (cont == "SelectClass") {
+    Content = <SelectClass
               cont={cont}
               setCont={setCont}
               setName={setName}
               showPop={props.showPop}
+              classesname={classesname}
+              setClassesName={setClassesName}
 
 
     />;
   }
-  if (cont == "Classes1") {
+  if (cont == "ClassDash") {
     Content = <ClassDash 
               cont={cont}
               setCont={setCont}
               setName={setName}
               showPop={props.showPop}
+              classesname={classesname}
+              setClassesName={setClassesName}
 
 
     />;
@@ -111,7 +118,7 @@ function Dashboard(props) {
     {
       itemTitle: "Classes",
       onClick: () => {
-        setCont("Classes");
+        setCont("SelectClass");
         setName("Classes");
 
       }

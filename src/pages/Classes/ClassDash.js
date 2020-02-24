@@ -15,10 +15,16 @@ function ClassDash(props) {
 
   return (
     <div className="classdash-body">
-            <CreateLesson showPop={props.showPop}/>
+      <div className="classdash-back" onClick={()=>{ props.setCont("SelectClass"); props.setName("Classes")}}>
+        Back To Classes
+
+      </div>
+            <CreateLesson classesname={props.classesname} setClassesName={props.setClassesName} showPop={props.showPop}/>
       <div className="notes-calendar-div">
       <Notes />
       <img className="classdash-calendar" src={require('../../imgs/Calendar.png')}/>
+      <p>{props.classesname}ss</p>
+
       </div>  
     </div>
 

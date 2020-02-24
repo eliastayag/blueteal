@@ -7,10 +7,11 @@ import Button from '../Button/Button';
 
 
 function CreateLesson(props){
+    var name = props.classesname;
     return(
         <div className='create-box'>
             <div className='top'>
-                <Header title={"English 6"}/>
+                <Header title={name}/>
             </div>
 
             <div className='bot'>

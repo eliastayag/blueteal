@@ -18,16 +18,18 @@ function Main(props) {
     const [showpage, setShowpage] = useState('Dashboard'); 
     const [pop, showPop] = useState(""); 
 
-    if(showpage == 'Login'){
-        page = <Login 
-                />;
-    }
+
     if(showpage == 'Dashboard'){
         page = <Dashboard 
         pop={pop}
         showPop={showPop}
                 />;
     } 
+
+    if(showpage == 'Login'){
+      page = <Login 
+              />;
+  }
 
     if (pop == ''){
       mpopup = null;
@@ -47,12 +49,7 @@ function Main(props) {
 
   return (
     <div style={{margin:0, padding:0, }}>
-      
-
       {mpopup}
-
-
-
       {page}
     </div>
   );

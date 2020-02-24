@@ -7,27 +7,48 @@ import './Classes.scss'
 import Classes from './Classes'
 import ClassCard from '../comps/ClassCard/ClassCard';
 import '../comps/ClassCard/ClassCard.scss'
+import ClassDash from './ClassDash';
 
 function SelectClass(props) {
+
 
 
     var items = [
         {
           itemTitle:'English 4',
           style:"classcard-red",
-          // onClick:()=>{props.showPage('ClassDash')}
+          onClick:()=>{props.setClassesName('English 4');
+          // props.setComp("ClassDash");
+          props.setCont("ClassDash");
+          props.setName("Monday, Feb 24th");
+          }
         },
         {
           itemTitle:'English 5',
           style:"classcard-blue",
-          // onClick:()=>{props.showPage('ClassDash')}
+          onClick:()=>{props.setClassesName('English 5');
+          // props.setComp("ClassDash");
+          props.setCont("ClassDash");
+          props.setName("Monday, Feb 24th");}
         },
         {
           itemTitle:'English 6',
           style:"classcard-purple",
-          // onClick:()=>{props.showPage('ClassDash')}
+          onClick:()=>{props.setClassesName('English 6');
+          // props.setComp("ClassDash");
+          props.setCont("ClassDash");
+          props.setName("Monday, Feb 24th");}
         },
       ]
+
+  // if (classesname == "English 4"){
+  //   <ClassDash 
+  //   classesname={classesname}
+  //   setClassesName={setClassesName}
+
+    
+  //   />;
+  // }
 
 
 
@@ -37,11 +58,14 @@ function SelectClass(props) {
 
       <div className="select-cards">
       {items.map((o,i)=>{
-                    return <ClassCard  setCont={props.setCont} onClick={() => { props.setComp("ClassDash"); props.setCont("Classes1"); props.setName("Monday, Feb 24th")}} {...o} />
+                    return <ClassCard  setCont={props.setCont}  {...o} />
                 })}
 
       </div>
       <img onClick={()=>{ props.showPop("NewClass");}} className="new-class" src={require('../../imgs/icons/png/plusicon.red.png')}/>    
+
+
+
       </div>
 
   );

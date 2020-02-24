@@ -32,6 +32,9 @@ function Popup(props) {
 
         content = (
             <div className="NewClass-popup">
+                <div>
+                    kwldaj
+                </div>
             
 
             <div className="popup-buttons">

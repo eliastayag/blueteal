@@ -12,20 +12,8 @@ function Classes(props) {
 
   var Content = null;
   const [comp, setComp] = useState ("SelectClass");
-  
-
-
-  if(comp == 'SelectClass'){
-    Content = <SelectClass
-                comp={comp}
-                setComp={setComp}
-                setName={props.setName}
-                setCont={props.setCont}
-                showPop={props.showPop}
-
-    />
-  }
-
+  const [classesname1, setClassesName1] = useState("HELLO");
+  const [classesname, setClassesName] = useState(classesname1);
 
   if(comp == 'ClassDash'){
     Content = <ClassDash
@@ -34,23 +22,35 @@ function Classes(props) {
                 setName={props.setName}
                 setCont={props.setCont}
                 showPop={props.showPop}
+                classesname={classesname}
+                setClassesName={setClassesName}
+                classesname1={classesname1}
+                setClassesName1={setClassesName1}
+    />
+  }
 
-
-
+  if(comp == 'SelectClass'){
+    Content = <SelectClass
+                comp={comp}
+                setComp={setComp}
+                setName={props.setName}
+                setCont={props.setCont}
+                showPop={props.showPop}
+                classesname={classesname}
+                setClassesName={setClassesName}
+                classesname1={classesname1}
+                setClassesName1={setClassesName1}
     />
   }
 
 
-  
-
 
   return (
+    
     <div>
 
+
     {Content}
-
-
-    
     </div>
 
   );
