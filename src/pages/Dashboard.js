@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Classes from "./Classes/Classes";
 import Forums from "./Forums/Forums";
 import Home from "./Home/Home";
 import Performance from "./Performance/Performance";
@@ -8,8 +7,6 @@ import Schedule from "./Schedule/Schedule";
 import Menu from "./comps/Menu/Menu";
 import theme from "../styles/ThemeStyles";
 import "./DashboardStyles.scss";
-import UserIcon from './comps/User/UserIcon';
-import UserName from './comps/User/UserName';
 import Upgrade from './Upgrade/Upgrade';
 import Header from './comps/Header/Header';
 import ClassDash from './Classes/ClassDash';
@@ -19,8 +16,8 @@ import SelectClass from './Classes/SelectClass';
 function Dashboard(props) {
   //cont is default to Home.js
   var Content = null;
-  const [cont, setCont] = useState("Home");
-  const [name, setName] = useState("Home");
+  const [cont, setCont] = useState("SelectClass");
+  const [name, setName] = useState("Classes");
   const [classesname, setClassesName] = useState(null);
 
   if (cont == "Home") {

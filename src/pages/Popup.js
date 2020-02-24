@@ -33,7 +33,10 @@ function Popup(props) {
         content = (
             <div className="NewClass-popup">
                 <div>
-                    kwldaj
+                <img src={require('../imgs/Pages/page.1.png')}/>
+                <img src={require('../imgs/Pages/page.2.png')}/>
+                <img src={require('../imgs/Pages/page.3.png')}/>
+
                 </div>
             
 

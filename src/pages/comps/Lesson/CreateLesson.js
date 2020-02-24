@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './CreateLesson.scss'
 import Header from '../Header/Header';
 import Button from '../Button/Button';
@@ -8,8 +8,13 @@ import Button from '../Button/Button';
 
 function CreateLesson(props){
     var name = props.classesname;
-    return(
-        <div className='create-box'>
+    var Content = 0;
+    const [lesson, lessonCount] = useState(0);
+
+
+    if (lesson == 0){
+        Content =(
+            <div className='create-box'>
             <div className='top'>
                 <Header title={name}/>
             </div>
@@ -21,6 +26,18 @@ function CreateLesson(props){
 
             </div>
         </div>
+
+        )
+    }
+
+
+
+
+    return(
+        <div>
+        {Content}
+        </div>
+
     )
 }
 

@@ -23,7 +23,6 @@ function ClassDash(props) {
       <div className="notes-calendar-div">
       <Notes />
       <img className="classdash-calendar" src={require('../../imgs/Calendar.png')}/>
-      <p>{props.classesname}ss</p>
 
       </div>  
     </div>
