@@ -6,8 +6,9 @@ import './UserIcon.scss';
 function UserIcon(){
     return(
         <div className='user'>
-             <p> Ramin Shadmehr </p>
-             <img className='userimg' src={require('../../../imgs/ramin.png')}/>
+                         <img className='userimg' src={require('../../../imgs/ramin.png')}/>
+
+             <p>Ramin Shadmehr</p>
         </div>
     )
 }
