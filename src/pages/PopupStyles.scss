@@ -47,6 +47,8 @@
     align-items: center;
     font-family: $niramit;
     font-size: 1.5rem;
+    // background-color: red;
+    // height: 100%;
 
 }
 
@@ -64,5 +66,25 @@
 
 .popup-buttons{
     display: flex;
-    justify-content: flex-end;
+    // align-self: flex-end;
+    margin-top: 170px;
+
+position: absolute;
+
+}
+
+.template-pics {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.singular-pic{
+    border-radius: 50px;
+    border-color: red;
+    padding: 10px;
+    // opacity: .5;
+}
+.singular-pic:hover{
+    opacity: .5;
 }

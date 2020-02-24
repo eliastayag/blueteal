@@ -18,10 +18,10 @@ function Popup(props) {
             Class Name
             <input className="popup-input" />
 
-            <div className="popup-buttons">
+            {/* <div className="popup-buttons">
             <Button onClick={() => { props.showPop("")}} title={"Cancel"} />
             <Button title={"OK"}/>
-            </div>
+            </div> */}
 
         </div>
     )
@@ -32,18 +32,26 @@ function Popup(props) {
 
         content = (
             <div className="NewClass-popup">
-                <div>
-                <img src={require('../imgs/Pages/page.1.png')}/>
-                <img src={require('../imgs/Pages/page.2.png')}/>
-                <img src={require('../imgs/Pages/page.3.png')}/>
+                <div className="template-pics">
+                    <div className="singular-pic" onClick={()=> {props.setCont("ClassTemplate"); props.showPop("");}}>
+                    <img src={require('../imgs/Pages/page.1.png')}/>
+                    </div>
+                    <div className="singular-pic">
+                    <img src={require('../imgs/Pages/page.2.png')}/>
+                    </div>
+                    <div className="singular-pic">
+                    <img src={require('../imgs/Pages/page.3.png')}/>
+
+                    </div>
+
 
                 </div>
             
 
-            <div className="popup-buttons">
+            {/* <div className="popup-buttons">
             <Button onClick={() => { props.showPop("")}} title={"Cancel"} />
             <Button title={"OK"}/>
-            </div>
+            </div> */}
 
         </div>
             
@@ -59,7 +67,13 @@ function Popup(props) {
         </div>
         <div className="popupbox-content">
             {content}
+
         </div>
+        <div className="popup-buttons"> 
+        <Button onClick={() => { props.showPop("")}} title={"Cancel"} />
+            <Button title={"OK"}/>
+        </div>
+
         
     </div>
     </div>

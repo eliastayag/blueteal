@@ -17,12 +17,16 @@ function Main(props) {
     var mpopup = null;
     const [showpage, setShowpage] = useState('Dashboard'); 
     const [pop, showPop] = useState(""); 
+    const [cont, setCont] = useState("SelectClass");
+
 
 
     if(showpage == 'Dashboard'){
         page = <Dashboard 
         pop={pop}
         showPop={showPop}
+        cont={cont}
+        setCont={setCont}
                 />;
     } 
 
@@ -40,6 +44,8 @@ function Main(props) {
                    // popup
                    pop={pop}
                    showPop={showPop}
+                   cont={cont}
+                   setCont={setCont}
 
 
                    />;                 

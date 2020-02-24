@@ -11,29 +11,29 @@ import Upgrade from './Upgrade/Upgrade';
 import Header from './comps/Header/Header';
 import ClassDash from './Classes/ClassDash';
 import SelectClass from './Classes/SelectClass';
+import ClassTemplate from './Classes/ClassTemplate';
 
 
 function Dashboard(props) {
   //cont is default to Home.js
   var Content = null;
-  const [cont, setCont] = useState("SelectClass");
   const [name, setName] = useState("Classes");
   const [classesname, setClassesName] = useState(null);
   const [lesson, lessonCount] = useState(null);
 
 
-  if (cont == "Home") {
+  if (props.cont == "Home") {
     Content = <Home 
-              cont={cont}
-              setCont={setCont}
+              cont={props.cont}
+              setCont={props.setCont}
               setName={setName}
 
     />;
   }
-  if (cont == "SelectClass") {
+  if (props.cont == "SelectClass") {
     Content = <SelectClass
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
               classesname={classesname}
@@ -45,10 +45,10 @@ function Dashboard(props) {
 
     />;
   }
-  if (cont == "ClassDash") {
+  if (props.cont == "ClassDash") {
     Content = <ClassDash 
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
               classesname={classesname}
@@ -59,51 +59,67 @@ function Dashboard(props) {
 
     />;
   }
+  if (props.cont == "ClassTemplate") {
+    Content = <ClassTemplate
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              classesname={classesname}
+              setClassesName={setClassesName}
+              lesson={lesson}
+              lessonCount={lessonCount}
+
+
+    />;
+  }
+
+
   
-  if (cont == "Schedule") {
+  if (props.cont == "Schedule") {
     Content = <Schedule 
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
 
 
     />;
   }
-  if (cont == "Performance") {
+  if (props.cont == "Performance") {
     Content = <Performance 
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
 
 
     />;
   }
-  if (cont == "Notes") {
+  if (props.cont == "Notes") {
     Content = <Notes 
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
 
 
     />;
   }
-  if (cont == "Forums") {
+  if (props.cont == "Forums") {
     Content = <Forums 
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
 
 
     />;
   }
-  if (cont == "Upgrade") {
+  if (props.cont == "Upgrade") {
     Content = <Upgrade 
-              cont={cont}
-              setCont={setCont}
+    cont={props.cont}
+    setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
 
@@ -115,14 +131,14 @@ function Dashboard(props) {
     {
       itemTitle: "Home",
       onClick: () => {
-        setCont("Home");
+        props.setCont("Home");
         setName("Home");
       }
     },
     {
       itemTitle: "Classes",
       onClick: () => {
-        setCont("SelectClass");
+        props.setCont("SelectClass");
         setName("Classes");
 
       }
@@ -130,7 +146,7 @@ function Dashboard(props) {
     {
       itemTitle: "Schedule",
       onClick: () => {
-        setCont("Schedule");
+        props.setCont("Schedule");
         setName("Schedule");
 
       }
@@ -138,7 +154,7 @@ function Dashboard(props) {
     {
       itemTitle: "Performance",
       onClick: () => {
-        setCont("Performance");
+        props.setCont("Performance");
         setName("Performance");
 
       }
@@ -146,7 +162,7 @@ function Dashboard(props) {
     {
       itemTitle: "Notes",
       onClick: () => {
-        setCont("Notes");
+        props.setCont("Notes");
         setName("Notes");
 
       }
@@ -154,7 +170,7 @@ function Dashboard(props) {
     {
       itemTitle: "Forums",
       onClick: () => {
-        setCont("Forums");
+        props.setCont("Forums");
         setName("Forums");
 
       }
@@ -162,7 +178,7 @@ function Dashboard(props) {
     {
       itemTitle: "Upgrade",
       onClick: () => {
-        setCont("Upgrade");
+        props.setCont("Upgrade");
         setName("Upgrade");
 
       },

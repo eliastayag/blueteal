@@ -71,7 +71,55 @@ function CreateLesson(props){
         </div>
 
         )
-    } else {
+    }
+    if (props.cont == "ClassTemplate"){
+        Content =(
+            <div className='create-box-lesson'>
+            <div className='new-top'>
+                <Header title={name}/>
+            </div>
+
+            <div className='new-bot'>
+                <div className="row-left-template">
+                    <div className="box1">
+                        <textarea className="box1-input"></textarea>
+                    </div>
+                    <div className="box1">
+                        <textarea className="box1-input"></textarea>
+                    </div>
+                    <div className="rectangle1">
+                        <textarea className="box1-input"></textarea>
+                    </div>
+
+                </div>
+
+                <div className='row-right-template'>
+                <div className="box1">
+                        <textarea className="box1-input"></textarea>
+                    </div>
+                    <div className="box1">
+                        <textarea className="box1-input"></textarea>
+                    </div>
+                    <div className="rectangle1">
+                        <textarea className="box1-input"></textarea>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        )
+    }
+    
+    
+    
+    
+    if (props.lesson == 1){
+
+    
         Content = (
             <div className='create-box'>
             <div className='top'>
