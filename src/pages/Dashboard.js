@@ -189,6 +189,12 @@ function Dashboard(props) {
   return (
     <div className="DashBody">
       <div className="dash-menu">
+      <img src={require("../imgs/icons/png/home.fill.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/book.fill.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/calendar.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/star.fill.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/pen.white.png")} className="icons"/>
+<img src={require("../imgs/icons/png/doc.white.png")} className="icons" id="docIcon"/>
       <Menu items={items} />
       </div>
         <div class="right-content">
