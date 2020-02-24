@@ -19,6 +19,8 @@ function Dashboard(props) {
   const [cont, setCont] = useState("SelectClass");
   const [name, setName] = useState("Classes");
   const [classesname, setClassesName] = useState(null);
+  const [lesson, lessonCount] = useState(null);
+
 
   if (cont == "Home") {
     Content = <Home 
@@ -36,6 +38,9 @@ function Dashboard(props) {
               showPop={props.showPop}
               classesname={classesname}
               setClassesName={setClassesName}
+              lesson={lesson}
+              lessonCount={lessonCount}
+
 
 
     />;
@@ -48,6 +53,8 @@ function Dashboard(props) {
               showPop={props.showPop}
               classesname={classesname}
               setClassesName={setClassesName}
+              lesson={lesson}
+              lessonCount={lessonCount}
 
 
     />;

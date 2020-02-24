@@ -21,6 +21,7 @@ function SelectClass(props) {
           // props.setComp("ClassDash");
           props.setCont("ClassDash");
           props.setName("Monday, Feb 24th");
+          props.lessonCount(null);
           }
         },
         {
@@ -29,7 +30,10 @@ function SelectClass(props) {
           onClick:()=>{props.setClassesName('English 5');
           // props.setComp("ClassDash");
           props.setCont("ClassDash");
-          props.setName("Monday, Feb 24th");}
+          props.setName("Monday, Feb 24th");
+          props.lessonCount(1);
+        }
+          
         },
         {
           itemTitle:'English 6',
@@ -37,7 +41,9 @@ function SelectClass(props) {
           onClick:()=>{props.setClassesName('English 6');
           // props.setComp("ClassDash");
           props.setCont("ClassDash");
-          props.setName("Monday, Feb 24th");}
+          props.setName("Monday, Feb 24th");
+          props.lessonCount(null);
+        }
         },
       ]
 
