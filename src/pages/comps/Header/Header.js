@@ -14,7 +14,7 @@ function Header({title,style}){
 
 Header.defaultProps = {
     title:"Default Header",
-    style:"fontSize:"
+    style:"fontSize: '5px'"
 
 }
 

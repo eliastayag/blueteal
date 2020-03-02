@@ -1,0 +1,30 @@
+@import '../../../styles/ThemeStyles.scss';
+
+
+.performanceTab{
+    background-color: #EAEAEA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 854px;
+    height: 155px;
+    font-family: $niramit;
+    // padding: 10px;
+}
+
+.performanceHeader {
+    font-size: normal;
+}
+
+.performancePic{
+    border-radius: 100px;
+    width:86px;
+    height:86px;
+    // margin-left:10px;
+    margin-top: 22px;
+    margin-left: 37px;
+    position: absolute;
+}
+
+.performanceTab-content {
+    margin-left: 10vw;
+}
