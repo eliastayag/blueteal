@@ -179,7 +179,7 @@ function Dashboard(props) {
       itemTitle: "Upgrade",
       onClick: () => {
         props.setCont("Upgrade");
-        setName("Upgrade");
+        setName("Plans");
 
       },
     }
