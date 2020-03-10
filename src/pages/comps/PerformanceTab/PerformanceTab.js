@@ -7,23 +7,19 @@ import Header from '../Header/Header'
 function PerformanceTab(){
     return(
         <div className='performanceTab'>
-            <div className="performanceHeader">
-                Performance
-            </div>
-            <div>
-            <img className="performancePic" src={require('../../../imgs/ramin.png')}/>
-            </div>
+            <p className="performanceHeader">Performance</p>
+
             <div className="performanceTab-content">
-                <div>
-                    Henry Leung
+                <img  className="performancePic" src={require('../../../imgs/ramin.png')}/>
+                <div className="performanceTab-sub">
+                    <p className="pTab-1">Henry Leung</p>
+                    <p>English 4</p>
+                    <p className="pTab-3">bad teachign style u need to improve</p>
                 </div>
-                <div>
-                    English 4
-                </div>
-                <div>
-                    Bad teaching style. improve.
-                </div>
+
+
             </div>
+
              
         </div>
     )
