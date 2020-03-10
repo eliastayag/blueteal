@@ -17,7 +17,7 @@ function Main(props) {
     var mpopup = null;
     const [showpage, setShowpage] = useState('Dashboard'); 
     const [pop, showPop] = useState(""); 
-    const [cont, setCont] = useState("SelectClass");
+    const [cont, setCont] = useState("Home");
 
 
 

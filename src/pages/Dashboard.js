@@ -17,7 +17,7 @@ import ClassTemplate from './Classes/ClassTemplate';
 function Dashboard(props) {
   //cont is default to Home.js
   var Content = null;
-  const [name, setName] = useState("Classes");
+  const [name, setName] = useState("");
   const [classesname, setClassesName] = useState(null);
   const [lesson, lessonCount] = useState(null);
 
@@ -132,7 +132,7 @@ function Dashboard(props) {
       itemTitle: "Home",
       onClick: () => {
         props.setCont("Home");
-        setName("Home");
+        setName("");
       }
     },
     {
