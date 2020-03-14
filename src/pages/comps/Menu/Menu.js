@@ -12,9 +12,22 @@ function MainMenu({items, menuTitle}){
                  <div className="menu-logo">
                     <UserIcon />
                 </div>
+                <div id="menufolder">
+                    <div id="left">
+                    <img src={require("../../../imgs/icons/png/home.fill.white.png")} className="symbol"/>
+         <img src={require("../../../imgs/icons/png/book.fill.white.png")} className="symbol"/>
+        <img src={require("../../../imgs/icons/png/calendar.white.png")} className="symbol"/>
+        <img src={require("../../../imgs/icons/png/star.fill.white.png")} className="symbol"/>
+        <img src={require("../../../imgs/icons/png/pen.white.png")} className="symbol"/>
+        <img src={require("../../../imgs/icons/png/doc.white.png")} className="symbol" id="docIcon"/>
+        <img src={require("../../../imgs/icons/png/stars.white.png")} className="symbol"/>
+                    </div>
+                    <div id="right">
             {items.map((o,i)=>{
                 return <MenuItem {...o} />
             })}
+            </div>
+            </div>
         </div>
         
         <img className="menu-cog" src={require('../../../imgs/icons/png/gear.white.png')}/>
