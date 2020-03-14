@@ -26,7 +26,7 @@ function Upgrade() {
         </div>
         <div className="UpgradeTab-content">
           <p className="UT-price2">$6</p>
-          <p style={{marginBottom:"30px"}}>/month</p>
+          <p className="UT-pricemonth">/month</p>
           <p>&#8226; Reuse up to 10 lessons per month</p>
           <p>&#8226; Behaviour log for lessons</p>
           <p>&#8226; 3 Custom Templates</p>
@@ -41,7 +41,7 @@ function Upgrade() {
         </div>
         <div className="UpgradeTab-content">
           <p className="UT-price2">$14</p>
-          <p style={{marginBottom:"30px"}}>/month</p>
+          <p className="UT-pricemonth">/month</p>
           <p>&#8226; Unlimited templates</p>
           <p>&#8226; Bulk printing and downloading lessons</p>
           <p>&#8226; Access to forums</p>
