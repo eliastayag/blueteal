@@ -18,7 +18,7 @@ function Upgrade() {
           <li>Default templates</li>
           <li>Reuse up to 3 lessons per month</li>
         </ul>
-          <Button title={"Current Version"}/>
+          <Button style={{background:"#ADADAD"}} title={"Current Version"}/>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ function Upgrade() {
             <li>3 Custom Templates</li>
             <li>Print and download individual lessons</li>
           </ul>
-          <Button title={"Get Pro"}/>
+          <Button style={{background:"#F06666"}} title={"Get Pro"}/>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ function Upgrade() {
             <li>Access to forums</li>
             <li>Full collaboration capabilities with supervising teacher</li>
           </ul>
-          <Button title={"Get Premium"}/>
+          <Button style={{background:"#7A4BFF"}} title={"Get Premium"}/>
         </div>
       </div>
 
