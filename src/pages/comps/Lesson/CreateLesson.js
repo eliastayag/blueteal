@@ -65,7 +65,7 @@ function CreateLesson(props){
             <div className='no-bot'>
                 <img className="create-pen-green" src={require('../../../imgs/icons/png/pen.green.png')}/>
                 <p className="create-box-p">No lessons here, make a new one!</p>
-                <Button onClick={()=>{ props.showPop("NewLesson");}} title={"New Lesson"}/>
+                <Button style={{background: 'rgba(149, 217, 254, 0.5)', color:"black"}} onClick={()=>{ props.showPop("NewLesson");}} title={"New Lesson"}/>
 
             </div>
         </div>

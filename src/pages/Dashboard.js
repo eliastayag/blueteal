@@ -28,6 +28,9 @@ function Dashboard(props) {
               cont={props.cont}
               setCont={props.setCont}
               setName={setName}
+              setClassesName={setClassesName}
+              lessonCount={lessonCount}
+
 
     />;
   }

@@ -14,17 +14,19 @@ import './Home.scss';
 
 
 
-function Home() {
+function Home(props) {
     
   return (
     <div className="homeCont">
       <div className="cont1">
         <div className="subCont1">
           <UEvents/>
-          <ClassesTab />
+          <ClassesTab cont={props.cont} setCont={props.setCont} setName={props.setName}          setClassesName={props.setClassesName}
+              showPop={props.showPop} lessonCount={props.lessonCount}
+              />
         </div>
-        <Notes/>
-      <img  src={require('../../imgs/home-calendar.png')}/>
+        <Notes style={{height:"380px"}} />
+      <img style={{borderRadius:'10px'}} src={require('../../imgs/home-calendar.png')}/>
 
      
  

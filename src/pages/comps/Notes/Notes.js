@@ -3,13 +3,17 @@ import './Notes.scss'
 
 
 
-function Notes(){
+function Notes({style}){
     return(
-        <div className='notes'>
+        <div className='notes' style={style}>
             <p className='notes-text'>Notes</p>
-            <input type="text" className="notesInput"/>
+            <textarea className="box1-input notes-text"></textarea>
         </div>
     )
+}
+
+Notes.defaultProps = {
+
 }
 
 
