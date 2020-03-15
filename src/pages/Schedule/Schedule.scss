@@ -3,6 +3,10 @@
 .sched-comp{
     height: 498px;
     width: 720px;
+    background-color: #FFF;
+    overflow-y: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
 .sched-days{
@@ -23,20 +27,8 @@
     line-height: 31px;
 }
 
-.sd1{
-    background-color: #504AEC;
-}
-.sd2{
-    background-color: #79EA7D;
-}
-.sd3{
-    background-color: #FF8B20;
-}
-.sd4{
-    background-color:  rgba(255, 77, 77, 0.87);
-}
-.sd5{
-    background-color: #8D40EF;
+.sd1, .sd2, .sd3, .sd4, .sd5, .sd6{
+    background-color: #EEEEEE;
 }
 
 .sched-box1{
@@ -50,6 +42,7 @@
     width: 1px;
     background-color: black;
     margin-left: 142.5px;
+    z-index:1000;
 
 }
 .sched-box3{
