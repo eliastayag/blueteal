@@ -14,6 +14,7 @@
     font-family: $niramit;
     // padding: 10px;
     margin:1.3vw;
+    overflow: hidden;
 
 }
 
@@ -53,8 +54,13 @@
 
 .UpgradeTab-content{
     display: flex;
-    // align-items: center;
+    text-align: left;
     flex-direction: column;
+    margin:0% 20%;
+}
+.UpgradeButton {
+    position: absolute;
+    margin-top:200px;
 }
 
 .UT-price{
