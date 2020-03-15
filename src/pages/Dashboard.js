@@ -12,6 +12,7 @@ import Header from './comps/Header/Header';
 import ClassDash from './Classes/ClassDash';
 import SelectClass from './Classes/SelectClass';
 import ClassTemplate from './Classes/ClassTemplate';
+import ForumPost from './ForumPost/ForumPost'
 
 
 function Dashboard(props) {
@@ -126,6 +127,18 @@ function Dashboard(props) {
 
     />;
   }
+
+  if (props.cont == "ForumPost") {
+    Content = <ForumPost 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+
+
+    />;
+  }
+
 
   var items = [
     {
