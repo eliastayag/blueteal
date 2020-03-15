@@ -8,6 +8,7 @@ import Notes from '../comps/Notes/Notes';
 import PerformanceTab from '../comps/PerformanceTab/PerformanceTab';
 import UEvents from '../comps/UpcomingEvents/UpcomingEvents';
 import ClassesTab from '../comps/ClassesTab/ClassesTab';
+import './Home.scss';
 
 
 
@@ -16,14 +17,22 @@ import ClassesTab from '../comps/ClassesTab/ClassesTab';
 function Home() {
     
   return (
-    <div>
-
+    <div className="homeCont">
+      <div className="cont1">
+        <div className="subCont1">
+          <UEvents/>
+          <ClassesTab />
+        </div>
+        <Notes/>
       <img  src={require('../../imgs/home-calendar.png')}/>
 
-      <Notes/>
-      <PerformanceTab />
-      <UEvents/>
-      <ClassesTab />
+     
+ 
+
+      </div>
+      <div className="cont2">
+      <PerformanceTab/>
+      </div>
 
 
 
