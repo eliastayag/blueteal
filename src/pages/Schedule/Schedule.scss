@@ -1,0 +1,81 @@
+@import '../../styles//ThemeStyles.scss';
+
+.sched-comp{
+    height: 498px;
+    width: 720px;
+}
+
+.sched-days{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sched-days-box {
+    display: flex;
+    width: 144px;
+    height: 53px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    font-family: $niramit;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.sd1{
+    background-color: #504AEC;
+}
+.sd2{
+    background-color: #79EA7D;
+}
+.sd3{
+    background-color: #FF8B20;
+}
+.sd4{
+    background-color:  rgba(255, 77, 77, 0.87);
+}
+.sd5{
+    background-color: #8D40EF;
+}
+
+.sched-box1{
+    height: 445px;
+    width: 1px;
+    background-color: black;
+    
+}
+.sched-box2{
+    height: 445px;
+    width: 1px;
+    background-color: black;
+    margin-left: 142.5px;
+
+}
+.sched-box3{
+    height: 445px;
+    width: 1px;
+    background-color: black;
+    margin-left: 142.5px;
+}
+.sched-box4{
+    height: 445px;
+    width: 1px;
+    background-color: black;
+    margin-left: 143px;
+
+}
+.sched-box5{
+    height: 445px;
+    width: 1px;
+    background-color: black;
+    margin-left: 143px;
+
+}
+.sched-box6{
+    height: 445px;
+    width: 1px;
+    background-color: black;
+    margin-left: 142.5px;
+
+}
