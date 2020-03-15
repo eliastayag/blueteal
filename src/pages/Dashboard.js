@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Forums from "./Forums/Forums";
 import Home from "./Home/Home";
 import Performance from "./Performance/Performance";
-import Notes from "./Notes/Notes";
+import NotesPage from "./Notes/NotesPage";
 import Schedule from "./Schedule/Schedule";
 import Menu from "./comps/Menu/Menu";
 import theme from "../styles/ThemeStyles";
@@ -97,7 +97,7 @@ function Dashboard(props) {
     />;
   }
   if (props.cont == "Notes") {
-    Content = <Notes 
+    Content = <NotesPage 
     cont={props.cont}
     setCont={props.setCont}
               setName={setName}
