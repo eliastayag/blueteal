@@ -1,0 +1,27 @@
+@import '../../../styles/ThemeStyles.scss';
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+    width: 250px;
+    height: 250px;
+   
+    border-radius: 10px;
+    font-family: $niramit;
+
+}
+
+
+.days{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.days > * {
+    padding: 10px;
+}
+
+

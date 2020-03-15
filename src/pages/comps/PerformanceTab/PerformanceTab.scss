@@ -1,0 +1,47 @@
+@import '../../../styles/ThemeStyles.scss';
+
+
+.performanceTab{
+    background-color: #EAEAEA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 854px;
+    height: 155px;
+    font-family: $niramit;
+    // padding: 10px;
+}
+
+.performanceHeader {
+    font-size: normal;
+    padding-top: 8px;
+    padding-left: 18px;
+    font-size: 18px;
+
+}
+
+.performancePic{
+    border-radius: 100px;
+    width:86px;
+    height:86px;
+    // margin-left:10px;
+    margin-top: 17px;
+    margin-left: 36px;
+
+}
+
+.performanceTab-content {
+    display: flex;
+    flex-direction: row;
+}
+.performanceTab-sub{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.pTab-1{
+    margin-top: 14px;
+}
+.pTab-3{
+    margin-top: 8px;
+}

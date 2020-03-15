@@ -1,0 +1,28 @@
+@import '../../../styles/ThemeStyles.scss';
+
+
+.notes {
+    background-color: $cream;
+    font-family: $niramit;
+    width:280.5px;
+    height:317.5px;
+    padding-left:10px;
+    border-radius: 10px;
+
+}
+.notes-text {
+    padding-top:10px;
+}
+
+.notesInput{
+    background-color: $cream;
+    border-width: 0;
+    width: 100%;
+    outline: none;
+
+    
+
+
+
+
+}

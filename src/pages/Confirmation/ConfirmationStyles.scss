@@ -1,0 +1,21 @@
+@import '../../styles//ThemeStyles.scss';
+
+.ConfirmationDiv {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: $niramit;
+}
+.confirmHeader {
+    font-size: 64pt;
+    font-weight: 700;
+}
+
+.confirmMsg{
+    font-size: 36pt;
+    font-weight: 200;
+}
+
+.confirmFoot {
+    font-size: 24pt;
+}
