@@ -16,7 +16,7 @@ function Upgrade() {
           <p>&#8226; Print individual lessons</p>
           <p>&#8226; Default templates</p>
           <p>&#8226; Reuse up to 3 lessons per month</p>
-          <Button title={"Current Version"}/>
+          <Button style={{background:"#ADADAD"}} title={"Current Version"}/>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ function Upgrade() {
           <p>&#8226; Behaviour log for lessons</p>
           <p>&#8226; 3 Custom Templates</p>
           <p>&#8226; Print and download individual lessons</p>
-          <Button title={"Get Pro"}/>
+          <Button style={{background:"#F06666"}} title={"Get Pro"}/>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ function Upgrade() {
           <p>&#8226; Bulk printing and downloading lessons</p>
           <p>&#8226; Access to forums</p>
           <p>&#8226; Full collaboration capabilities with supervising teacher</p>
-          <Button title={"Get Premium"}/>
+          <Button style={{background:"#7A4BFF"}} title={"Get Premium"}/>
         </div>
       </div>
 
