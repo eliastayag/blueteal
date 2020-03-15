@@ -189,24 +189,18 @@ function Dashboard(props) {
   return (
     <div className="DashBody">
       <div className="dash-menu">
-        <div className="menuLeft">
-        {/* <img src={require("../imgs/icons/png/home.fill.white.png")} className="icons"/>
-    <img src={require("../imgs/icons/png/book.fill.white.png")} className="icons"/>
-    <img src={require("../imgs/icons/png/calendar.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/star.fill.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/pen.white.png")} className="icons"/>
-<img src={require("../imgs/icons/png/doc.white.png")} className="icons" id="docIcon"/> */}
-        </div>
+        
         <div className="menuRight">
         <Menu items={items} />
 
         </div>
 
       </div>
+
+
         <div class="right-content">
           <div className="dash-header">
           <Header title={name}/>
-
           </div>
           {Content}
         </div>
