@@ -18,7 +18,7 @@ function ClassTemplate(props) {
   return (
     <div className="classdash-body">
       <div className="classdash-back" onClick={()=>{ props.setCont("ClassDash"); props.setName("Classes"); }}>
-       Back to Lesson Plans
+      &larr; Back to Lesson Plans
 
       </div>
             <CreateLesson lesson={props.lesson} lessonCount={props.lessonCount} setCont={props.setCont} cont={props.cont}
