@@ -21,11 +21,11 @@ function Performance(props) {
 
       <div className="performancePanel">
       <p> February 2, 2020</p>
-      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop} onClick={()=>{ props.showPop('UpgradePrompt')}}/>
       <p> January 22, 2020</p>
-      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop} onClick={()=>{ props.showPop('UpgradePrompt')}}/>
       <p> January 15, 2020</p>  
-      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop} onClick={()=>{ props.showPop('UpgradePrompt')}}/>
       </div>
     </div>
 

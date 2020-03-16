@@ -226,6 +226,8 @@ function Dashboard(props) {
 
     // />;
   }
+
+
   if (props.cont == "ForumPost" && status == "PREMIUM") {
     props.showPop("");
 

@@ -4,9 +4,9 @@ import Header from '../Header/Header'
 
 
 
-function PerformanceTab(props){
+function PerformanceTab({props,onClick}){
     return(
-        <div className='performanceTab' onClick={()=>{props.setCont("Performance"); props.showPop('UpgradePrompt')}}>
+        <div className='performanceTab' onClick={onClick}>
             <div className="performanceTop">
             <p className="performanceHeader">Performance</p>
             <div className="performanceDotDiv">
