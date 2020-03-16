@@ -14,7 +14,7 @@ function UpgradePay(props) {
         //     <Button title="Confirm" onClick={()=>{ props.setCont('ConfirmationPro'); props.setName("Plans")}} />
         // )
         Content = (
-            <div className="UpgradeTab">
+            <div className="UpgradeTabp">
             <div className="UpgradeHeader-2">
               Pro
             </div>
@@ -36,7 +36,7 @@ function UpgradePay(props) {
         //     <Button title="Confirm" onClick={()=>{ props.setCont('ConfirmationPremium'); props.setName("Plans")}} />
         // )
         Content = (
-            <div className="UpgradeTab">
+            <div className="UpgradeTabp">
             <div className="UpgradeHeader-3">
               Premium
             </div>
@@ -62,7 +62,7 @@ function UpgradePay(props) {
             <div className="UpgradeHeader-pay"></div>
             <div className="UpgradeTab-content-pay">
                 <Wrapper setCont={props.setCont} setName={props.setName}/>
-                 <Button title="Back to Options" onClick={()=>{ props.setCont('Upgrade'); props.setName("Plans")}} />
+                 <Button title="Back to Options" onClick={()=>{ props.setCont('Upgrade'); props.setName("Plans")}}  style={{background: '#68B2A0'}}/>
 
             {But}
             </div>

@@ -212,6 +212,20 @@ function Dashboard(props) {
 
     // />;
   }
+  if (props.cont == "ForumPost" && status == "PREMIUM") {
+    props.showPop("");
+
+    Content = <ForumPost 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
+
+
+    />;
+  }
 
 
   var items = [
