@@ -210,18 +210,19 @@ function Dashboard(props) {
       }
     },
     {
-      itemTitle: "Performance",
-      onClick: () => {
-        props.setCont("Performance");
-        setName("Performance");
-
-      }
-    },
-    {
       itemTitle: "Notes",
       onClick: () => {
         props.setCont("Notes");
         setName("Notes");
+
+      }
+
+    },
+    {
+      itemTitle: "Performance",
+      onClick: () => {
+        props.setCont("Performance");
+        setName("Performance");
 
       }
     },
