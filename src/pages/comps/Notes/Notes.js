@@ -6,8 +6,8 @@ import './Notes.scss'
 function Notes({style}){
     return(
         <div className='notes' style={style}>
-            <p className='notes-text'>Notes</p>
-            <textarea className="box1-input notes-text"></textarea>
+            <input className="notesTitle" placeholder="Insert Title"></input>
+            <textarea className="box1-input notes-text" placeholder="Type something here..."></textarea>
         </div>
     )
 }

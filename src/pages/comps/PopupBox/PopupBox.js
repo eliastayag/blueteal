@@ -10,7 +10,7 @@ function PopupBox({style,instyle,defaultheader,position,position2}){
         <div style={style}>
             {defaultheader}
             <div style={instyle}>henlo</div>
-            <MainButton style={{position:"absolute"}}/>
+            <MainButton style={{display: "flex"}}/>
             <MainButton style={position2}/>
         </div>
     )

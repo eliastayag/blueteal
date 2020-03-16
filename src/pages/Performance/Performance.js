@@ -19,10 +19,14 @@ function Performance() {
       <Button title="English 6" style={{borderRadius: '10px', color:"black",border: '2px solid #6A6A6A',background:'white'}}/>
       </div>
 
-
+      <div className="performancePanel">
+      <p> February 2, 2020</p>
       <PerformanceTab/>
+      <p> Janurary 22, 2020</p>
       <PerformanceTab/>
+      <p> January 15, 2020</p>  
       <PerformanceTab/>
+      </div>
     </div>
 
   );
