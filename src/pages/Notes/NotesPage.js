@@ -4,7 +4,8 @@ import Notes from '../comps/Notes/Notes';
 function NotesPage() {
     
   return (
-    <div >
+    <div className="notesCont">
+      <Notes />
       <Notes />
       <Notes />
     
