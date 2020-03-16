@@ -31,15 +31,55 @@ function Schedule() {
         <p>17:00</p>
         </div>
         <div className="sched-box2">
-          <div className="time time-green">
+          <div className="time" style={{marginTop:"110px", background: "#74D29E"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+          <div className="time" style={{marginTop:"40px", background: "rgba(255, 213, 66, 0.8)"}}>
             <p>10:00 - 11:30</p>
             <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
           </div>
         </div>
-        <div className="sched-box3"></div>
-        <div className="sched-box4"></div>
-        <div className="sched-box5"></div>
-        <div className="sched-box6"></div>
+        <div className="sched-box3">
+          <div className="time" style={{marginTop:"40px", background: "rgba(115, 187, 239, 0.67)"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+          <div className="time" style={{marginTop:"40px", background: "#74D29E"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+        </div>
+        <div className="sched-box4">
+          <div className="time" style={{marginTop:"20px", background: "#74D29E"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+          <div className="time" style={{marginTop:"40px", background: "rgba(255, 213, 66, 0.8)"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+          <div className="time" style={{marginTop:"20px", background: "rgba(115, 187, 239, 0.67)"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+        </div>
+        <div className="sched-box5">
+        <div className="time" style={{marginTop:"40px", background: "rgba(255, 213, 66, 0.8)"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+        </div>
+        <div className="sched-box6">
+          <div className="time" style={{marginTop:"20px", background: "rgba(115, 187, 239, 0.67)"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+          <div className="time" style={{marginTop:"70px", background: "#74D29E"}}>
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+        </div>
       </div>    
     </div>
 
