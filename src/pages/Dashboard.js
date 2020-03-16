@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Forums from "./Forums/Forums";
 import Home from "./Home/Home";
 import Performance from "./Performance/Performance";
-import Notes from "./Notes/Notes";
+import NotesPage from "./Notes/NotesPage";
 import Schedule from "./Schedule/Schedule";
 import Menu from "./comps/Menu/Menu";
 import theme from "../styles/ThemeStyles";
@@ -12,6 +12,10 @@ import Header from './comps/Header/Header';
 import ClassDash from './Classes/ClassDash';
 import SelectClass from './Classes/SelectClass';
 import ClassTemplate from './Classes/ClassTemplate';
+import ForumPost from './ForumPost/ForumPost'
+import UpgradePay from './Upgrade/UpgradePay';
+import ConfirmationPro from './Confirmation/ConfirmationPro';
+import ConfirmationPremium from './Confirmation/ConfirmationPremium';
 
 
 function Dashboard(props) {
@@ -20,6 +24,8 @@ function Dashboard(props) {
   const [name, setName] = useState("");
   const [classesname, setClassesName] = useState(null);
   const [lesson, lessonCount] = useState(null);
+  const [upgrade, setUpgrade] = useState(null);
+  const [status, setStatus] = useState('FREE');
 
 
   if (props.cont == "Home") {
@@ -27,6 +33,11 @@ function Dashboard(props) {
               cont={props.cont}
               setCont={props.setCont}
               setName={setName}
+              setClassesName={setClassesName}
+              lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
+
 
     />;
   }
@@ -40,6 +51,8 @@ function Dashboard(props) {
               setClassesName={setClassesName}
               lesson={lesson}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
 
@@ -55,6 +68,8 @@ function Dashboard(props) {
               setClassesName={setClassesName}
               lesson={lesson}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -69,6 +84,8 @@ function Dashboard(props) {
               setClassesName={setClassesName}
               lesson={lesson}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -82,6 +99,8 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -92,16 +111,20 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
   }
   if (props.cont == "Notes") {
-    Content = <Notes 
+    Content = <NotesPage 
     cont={props.cont}
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -112,20 +135,114 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
   }
   if (props.cont == "Upgrade") {
     Content = <Upgrade 
-    cont={props.cont}
-    setCont={props.setCont}
+              cont={props.cont}
+              setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
   }
+  if (props.cont == "UpgradePay") {
+    Content = <UpgradePay 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
+
+
+    />;
+  }
+  if (props.cont == "ConfirmationPro") {
+    Content = <ConfirmationPro 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
+
+
+    />;
+  }
+  if (props.cont == "ConfirmationPremium") {
+    Content = <ConfirmationPremium
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
+
+
+    />;
+  }
+
+  if (props.cont == "ForumPost" && status == "FREE") {
+    props.showPop("UpgradePrompt");
+    props.setCont("Forums");
+    // Content = <ForumPost 
+    // cont={props.cont}
+    // setCont={props.setCont}
+    //           setName={setName}
+    //           showPop={props.showPop}
+    //           status={status}
+    //           setStatus={setStatus}
+
+
+    // />;
+  }
+  if (props.cont == "ForumPost" && status == "PRO") {
+    props.showPop("UpgradePrompt");
+    props.setCont("Forums");
+    // Content = <ForumPost 
+    // cont={props.cont}
+    // setCont={props.setCont}
+    //           setName={setName}
+    //           showPop={props.showPop}
+    //           status={status}
+    //           setStatus={setStatus}
+
+
+    // />;
+  }
+
+
+  if (props.cont == "ForumPost" && status == "PREMIUM") {
+    props.showPop("");
+
+    Content = <ForumPost 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
+
+
+    />;
+  }
+
 
   var items = [
     {
@@ -152,18 +269,19 @@ function Dashboard(props) {
       }
     },
     {
-      itemTitle: "Performance",
-      onClick: () => {
-        props.setCont("Performance");
-        setName("Performance");
-
-      }
-    },
-    {
       itemTitle: "Notes",
       onClick: () => {
         props.setCont("Notes");
         setName("Notes");
+
+      }
+
+    },
+    {
+      itemTitle: "Performance",
+      onClick: () => {
+        props.setCont("Performance");
+        setName("Performance");
 
       }
     },
@@ -199,6 +317,7 @@ function Dashboard(props) {
 
 
         <div class="right-content">
+        <img class="logo" src={require('../imgs/icons/png/t.thin.green.png')} onClick={()=>{props.setCont("Home"); setName("")}}/>
           <div className="dash-header">
           <Header title={name}/>
           </div>

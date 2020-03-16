@@ -9,7 +9,7 @@ function Calendar(){
             {/* TITLE */}
             <p>Calendar</p>
             {/* YEAR */}
-            <p>Feburary 2020</p>
+            <p>February 2020</p>
             {/* DAYS */}
             <div className="days">
             <p>S</p>

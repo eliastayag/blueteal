@@ -18,7 +18,7 @@ function ClassDash(props) {
   return (
     <div className="classdash-body">
       <div className="classdash-back" onClick={()=>{ props.setCont("SelectClass"); props.setName("Classes")}}>
-        Back To Classes
+      &larr; Back To Classes
 
       </div>
             <CreateLesson lesson={props.lesson} lessonCount={props.lessonCount}

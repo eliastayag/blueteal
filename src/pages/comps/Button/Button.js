@@ -1,11 +1,11 @@
 import React from 'react';
 import './AddButton.scss';
 
-function MainButton({title,onClick}){
+function MainButton({title,onClick,style}){
 
     var but = 'button button-active'
     return(
-        <div className="buttons" onClick={onClick}>{title}</div>
+        <div className="buttons" onClick={onClick} style={style}>{title}</div>
 
     )
 }

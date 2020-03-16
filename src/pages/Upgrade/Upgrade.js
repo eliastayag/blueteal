@@ -3,7 +3,7 @@ import './UpgradeStyles.scss';
 import Button from '../comps/Button/Button';
 
 
-function Upgrade() {
+function Upgrade(props) {
     
   return (
     <div className="UpgradeDiv">
@@ -12,11 +12,13 @@ function Upgrade() {
           Basic
         </div>
         <div className="UpgradeTab-content">
-          <p className="UT-price">FREE</p>
-          <p>&#8226; Print individual lessons</p>
-          <p>&#8226; Default templates</p>
-          <p>&#8226; Reuse up to 3 lessons per month</p>
-          <Button title={"Current Version"}/>
+        <p className="UT-price">FREE</p>
+        <ul className="featureListFree">
+          <li>Print individual lessons</li>
+          <li>Default templates</li>
+          <li>Reuse up to 3 lessons per month</li>
+        </ul>
+          <Button style={{background:"#ADADAD", padding: "10px", width: "90%"}} title={"Current Version"}/>
         </div>
       </div>
 
@@ -27,11 +29,13 @@ function Upgrade() {
         <div className="UpgradeTab-content">
           <p className="UT-price2">$6</p>
           <p className="UT-pricemonth">/month</p>
-          <p>&#8226; Reuse up to 10 lessons per month</p>
-          <p>&#8226; Behaviour log for lessons</p>
-          <p>&#8226; 3 Custom Templates</p>
-          <p>&#8226; Print and download individual lessons</p>
-          <Button title={"Get Pro"}/>
+          <ul className="featureList">
+            <li>Reuse up to 10 lessons per month</li>
+            <li>Behaviour log for lessons</li>
+            <li>3 Custom Templates</li>
+            <li>Print and download individual lessons</li>
+          </ul>
+          <Button style={{background:"#F06666", padding: "10px", width: "90%"}} title={"Get Pro"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Pro"); props.setName("")}}/>
         </div>
       </div>
 
@@ -42,11 +46,13 @@ function Upgrade() {
         <div className="UpgradeTab-content">
           <p className="UT-price2">$14</p>
           <p className="UT-pricemonth">/month</p>
-          <p>&#8226; Unlimited templates</p>
-          <p>&#8226; Bulk printing and downloading lessons</p>
-          <p>&#8226; Access to forums</p>
-          <p>&#8226; Full collaboration capabilities with supervising teacher</p>
-          <Button title={"Get Premium"}/>
+          <ul className="featureList">
+            <li>Unlimited templates</li>
+            <li>Bulk printing and downloading lessons</li>
+            <li>Access to forums</li>
+            <li>Full collaboration capabilities with supervising teacher</li>
+          </ul>
+          <Button style={{background:"#7A4BFF", padding: "10px", width: "90%"}} title={"Get Premium"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Premium"); props.setName("")}}/>
         </div>
       </div>
 

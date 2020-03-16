@@ -17,6 +17,9 @@ function SelectClass(props) {
         {
           itemTitle:'English 4',
           style:"classcard-red",
+          style1:"classcard-1",
+          style2:'classcard-book',
+
           onClick:()=>{props.setClassesName('English 4');
           // props.setComp("ClassDash");
           props.setCont("ClassDash");
@@ -27,6 +30,9 @@ function SelectClass(props) {
         {
           itemTitle:'English 5',
           style:"classcard-blue",
+          style1:"classcard-1",
+          style2:'classcard-book',
+
           onClick:()=>{props.setClassesName('English 5');
           // props.setComp("ClassDash");
           props.setCont("ClassDash");
@@ -38,11 +44,15 @@ function SelectClass(props) {
         {
           itemTitle:'English 6',
           style:"classcard-purple",
+          style1:"classcard-1",
+          style2:'classcard-book',
+
           onClick:()=>{props.setClassesName('English 6');
           // props.setComp("ClassDash");
           props.setCont("ClassDash");
           props.setName("Monday, Feb 24th");
           props.lessonCount(null);
+          
         }
         },
       ]
