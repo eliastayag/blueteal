@@ -1,22 +1,23 @@
 @import '../../../styles/ThemeStyles.scss';
 
-
 .performanceTab{
     background-color: #EAEAEA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 69vw;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     font-family: $niramit;
+    display: flex;
+    flex-direction: column;
     // padding: 10px;
 }
 
 .performanceHeader {
     font-size: normal;
-    padding-top: 8px;
+    // padding-top: 8px;
     padding-left: 18px;
     font-size: 22px;
-
+    // background-color: lightyellow;
 }
 
 .performancePic{
@@ -24,19 +25,26 @@
     width:106px;
     height:106px;
     // margin-left:10px;
-    margin-top: 25px;
+    // margin-top: 25px;
     margin-left: 36px;
-
 }
 
 .performanceTab-content {
     display: flex;
     flex-direction: row;
+    align-content: center;
+    // justify-content: center;
+    // margin-top: -20px;
+    line-height: 17pt;
+    // background-color: pink;
+    width: 100%;
 }
 .performanceTab-sub{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+    // background-color: lightsalmon;
+    width: 80%;
 }
 
 .pTab-1{
@@ -69,4 +77,21 @@ margin-left: 5px;
 
 .performanceDotDiv{
     display: flex;
+    // background-color: lightblue;
+    padding-top: 20px;
+    // padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.readMore {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.performanceTop {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 30px;
 }

@@ -4,16 +4,17 @@
 .buttons {
     display:flex;
     align-items: center;
-    justify-content: center;
-    width:155px;
-    height:50px;
+    justify-content: space-evenly;
+    width:100px;
+    // height:50px;
+    padding: 2.5px;
     // border: 2px solid $green;
     box-sizing: border-box;
     border-radius: 9px;
     // font-size:1em;
     color:white;
     font-family: $niramit;
-    background: linear-gradient(180deg, rgba(170, 204, 194, 0.75) 9.38%, rgba(255, 255, 255, 0) 100%), #B3D8CF;
+    // background: linear-gradient(180deg, rgba(170, 204, 194, 0.75) 9.38%, rgba(255, 255, 255, 0) 100%), #B3D8CF;
     
 }
 

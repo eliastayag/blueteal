@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './PopupStyles.scss'
 import Header from "./comps/Header/Header"
 import Button from "./comps/Button/Button";
+import './comps/UpgradePopUp/UpgradePopUpStyles.scss';
 
 
 function Popup(props) {
@@ -58,6 +59,31 @@ function Popup(props) {
         )
     }
 
+    if (props.pop == "UpgradePrompt"){
+        content=(
+            <div className="PopUpCont">
+            <div className="closeBut">
+            <img  onClick={()=> {props.showPop("")}} src={require('../imgs/icons/png/close.png')}/>
+            </div>
+            <div className="PUContent">
+                <div className="PUDecor">
+                <img src={require('../imgs/popupfeature-1.png')}/>
+                </div>
+                <div className="PUList">
+                <p className="PUHeader">Ready to Upgrade?</p>
+                <ul className="features">
+                    <li>Access to forums</li>
+                    <li>More templates</li>
+                    <li>Full collaboration capabilities with supervising teacher</li>
+                    <li>Bulk printing & downloading lessons</li>
+                </ul>
+                <Button title={"Upgrade Now"} onClick={()=> {props.setCont("Upgrade"); props.showPop("");}}/>
+                </div>
+            </div>
+        </div>
+        )
+    }
+
   return (
 
     <div className="popup-background">
@@ -70,8 +96,8 @@ function Popup(props) {
 
         </div>
         <div className="popup-buttons"> 
-        <Button onClick={() => { props.showPop("")}} title={"Cancel"} />
-            <Button title={"OK"}/>
+        <Button onClick={() => { props.showPop("")}} style={{border:"white solid 1px", borderRadius:"100px", margin: "5px"}}title={"Cancel"} />
+            <Button style={{backgroundColor: "white", color: "#529A89", border: "white 1px solid",borderRadius:"100px", margin: "5px"}}title={"OK"}/>
         </div>
 
         

@@ -77,6 +77,12 @@ function CreateLesson(props){
             <div className='create-box-lesson'>
             <div className='new-top'>
                 <Header title={name}/>
+                <div className="headerOpts">
+                <img src={require('../../../imgs/icons/png/save.png')}/>
+                <img src={require('../../../imgs/icons/png/saveTemplate.png')}/>
+                <img src={require('../../../imgs/icons/png/download.png')}/>
+                <img src={require('../../../imgs/icons/png/print.png')}/>
+                </div>
             </div>
 
             <div className='new-bot'>

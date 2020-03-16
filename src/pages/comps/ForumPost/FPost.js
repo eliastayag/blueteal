@@ -4,7 +4,7 @@ import './FPost.scss'
 function FPost(props){
 
     return(
-        <div className="FPostTab" onClick={()=>{ props.setCont("ForumPost")}}>
+        <div className="FPostTab" onClick={()=>{ props.setCont("ForumPost"); props.showPop('NewLesson')}}>
             <img  className="forums-book" src={require('../../../imgs/icons/png/books.png')}/>
 
             <div className="FPostTabC">
@@ -18,4 +18,4 @@ function FPost(props){
 }
 
 
-export default FPost
+export default FPost;

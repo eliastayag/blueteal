@@ -23,25 +23,33 @@
 }
 
 .no-top {
-    background-color: #BEDDEE;
+    background-color: #7ACFFE;
     border-radius: 10px 10px 0px 0px;
     padding: 15px;
 }
 .new-top {
-    background-color: #BEDDEE;
+    background-color: #7ACFFE;
     color: rgba(0, 0, 0, 0.44);
     border-radius: 10px 10px 0px 0px;
-    padding: 15px;
+    padding: 10px 20px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.headerOpts img {
+    margin-right: 20px;
+    padding-top: 10px;
 }
 .top {
-    background-color: #BEDDEE;
+    background-color: #7ACFFE;
     border-radius: 10px 10px 0px 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     // width: 100%;
 }
 
@@ -51,9 +59,9 @@
 
 
 .new-plus{
-    left: 0px;
+    padding-right: 30px;
     font-size: 2rem;
-    font-weight: bold;;
+    font-weight: 200;
     
 }
 
@@ -71,7 +79,7 @@
     align-items: center;
     height: 100%;
     // background-color: darkblue;
-
+    padding: 50px;
 }
 
 .create-pen-green{
@@ -118,8 +126,8 @@
 .box1{
     height: 75px;
     // width: 100%;
-    border-width: 1px;
-    border-color: black;
+    border-width: 2px;
+    border-color: #999999;
     border-style: solid;
     padding: 10px;
     margin-top: -1px;
@@ -138,8 +146,8 @@
 .rectangle1{
     height: 350px;
     // width: 100%;
-    border-width: 1px;
-    border-color: black;
+    border-width: 2px;
+    border-color: #999999;
     border-style: solid;
     padding: 10px;
     margin-top: -1px;

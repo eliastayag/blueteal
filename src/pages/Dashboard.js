@@ -25,6 +25,7 @@ function Dashboard(props) {
   const [classesname, setClassesName] = useState(null);
   const [lesson, lessonCount] = useState(null);
   const [upgrade, setUpgrade] = useState(null);
+  const [status, setStatus] = useState('FREE');
 
 
   if (props.cont == "Home") {
@@ -34,6 +35,8 @@ function Dashboard(props) {
               setName={setName}
               setClassesName={setClassesName}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -48,6 +51,8 @@ function Dashboard(props) {
               setClassesName={setClassesName}
               lesson={lesson}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
 
@@ -63,6 +68,8 @@ function Dashboard(props) {
               setClassesName={setClassesName}
               lesson={lesson}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -77,6 +84,8 @@ function Dashboard(props) {
               setClassesName={setClassesName}
               lesson={lesson}
               lessonCount={lessonCount}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -90,6 +99,8 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -100,6 +111,8 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -110,6 +123,8 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -120,6 +135,8 @@ function Dashboard(props) {
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -132,6 +149,8 @@ function Dashboard(props) {
               showPop={props.showPop}
               upgrade={upgrade}
               setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -144,6 +163,8 @@ function Dashboard(props) {
               showPop={props.showPop}
               upgrade={upgrade}
               setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -156,6 +177,8 @@ function Dashboard(props) {
               showPop={props.showPop}
               upgrade={upgrade}
               setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
@@ -168,20 +191,26 @@ function Dashboard(props) {
               showPop={props.showPop}
               upgrade={upgrade}
               setUpgrade={setUpgrade}
+              status={status}
+              setStatus={setStatus}
 
 
     />;
   }
 
-  if (props.cont == "ForumPost") {
-    Content = <ForumPost 
-    cont={props.cont}
-    setCont={props.setCont}
-              setName={setName}
-              showPop={props.showPop}
+  if (props.cont == "ForumPost" && status == "FREE") {
+    props.showPop("UpgradePrompt");
+    props.setCont("Forums");
+    // Content = <ForumPost 
+    // cont={props.cont}
+    // setCont={props.setCont}
+    //           setName={setName}
+    //           showPop={props.showPop}
+    //           status={status}
+    //           setStatus={setStatus}
 
 
-    />;
+    // />;
   }
 
 
@@ -258,6 +287,7 @@ function Dashboard(props) {
 
 
         <div class="right-content">
+        <img class="logo" src={require('../imgs/icons/png/t.thin.green.png')}/>
           <div className="dash-header">
           <Header title={name}/>
           </div>
