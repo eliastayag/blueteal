@@ -231,6 +231,7 @@ function Dashboard(props) {
 
 
         <div class="right-content">
+        <img class="logo" src={require('../imgs/icons/png/t.thin.green.png')}/>
           <div className="dash-header">
           <Header title={name}/>
           </div>
