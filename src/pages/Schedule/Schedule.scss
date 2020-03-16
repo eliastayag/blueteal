@@ -2,8 +2,9 @@
 
 .sched-comp{
     height: 498px;
-    width: 720px;
+    width: 820px;
     overflow-y: hidden;
+    overflow-x:hidden;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
 }
@@ -55,9 +56,4 @@
     width:inherit;
     font-family: $niramit;
     font-size:10pt;
-}
-.time-green {
-    width:inherit;
-    margin-top:110px;
-    background: #74D29E;
 }
