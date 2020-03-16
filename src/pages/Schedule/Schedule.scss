@@ -3,7 +3,6 @@
 .sched-comp{
     height: 498px;
     width: 720px;
-    background-color: #FFF;
     overflow-y: hidden;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
@@ -23,6 +22,7 @@
     justify-content: center;
     align-items: center;
     font-family: $niramit;
+    font-weight: bold;
     font-size: 24px;
     line-height: 31px;
 }
@@ -31,44 +31,33 @@
     background-color: #EEEEEE;
 }
 
-.sched-box1{
+.sched-box1, .sched-box2, .sched-box3, .sched-box4, .sched-box5, .sched-box6 {
     height: 445px;
-    width: 1px;
-    background-color: black;
+    width: 142.5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
     
 }
-.sched-box2{
-    height: 445px;
-    width: 1px;
-    background-color: black;
-    margin-left: 142.5px;
-    z-index:1000;
-
+// time column
+.sched-box1 {
+    font-family:$niramit;
+    font-size:16px;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-.sched-box3{
-    height: 445px;
-    width: 1px;
-    background-color: black;
-    margin-left: 142.5px;
-}
-.sched-box4{
-    height: 445px;
-    width: 1px;
-    background-color: black;
-    margin-left: 143px;
 
+// TIME BLOCKS
+.time {
+    height:115px;
+    width:inherit;
+    font-family: $niramit;
+    font-size:10pt;
 }
-.sched-box5{
-    height: 445px;
-    width: 1px;
-    background-color: black;
-    margin-left: 143px;
-
-}
-.sched-box6{
-    height: 445px;
-    width: 1px;
-    background-color: black;
-    margin-left: 142.5px;
-
+.time-green {
+    width:inherit;
+    margin-top:110px;
+    background: #74D29E;
 }
