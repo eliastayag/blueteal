@@ -10,7 +10,7 @@ function ForumPost(props) {
     <div>
       
       
-    <p onClick={()=>{ props.setCont("Forums"); props.setName("Forums")}}>Back to Forums</p>
+    <p onClick={()=>{ props.setCont("Forums"); props.setName("Forums")}}>&larr; Back to Forums</p>
     
     </div>
 
