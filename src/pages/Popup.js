@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './PopupStyles.scss'
 import Header from "./comps/Header/Header"
 import Button from "./comps/Button/Button";
+import './comps/UpgradePopUp/UpgradePopUpStyles.scss';
 
 
 function Popup(props) {
@@ -55,6 +56,31 @@ function Popup(props) {
 
         </div>
             
+        )
+    }
+
+    if (props.pop == "UpgradePrompt"){
+        content=(
+            <div className="PopUpCont">
+            <div className="closeBut">
+            <img  onClick={()=> {props.showPop("")}} src={require('../imgs/icons/png/close.png')}/>
+            </div>
+            <div className="PUContent">
+                <div className="PUDecor">
+                <img src={require('../imgs/popupfeature-1.png')}/>
+                </div>
+                <div className="PUList">
+                <p className="PUHeader">Ready to Upgrade?</p>
+                <ul className="features">
+                    <li>Access to forums</li>
+                    <li>More templates</li>
+                    <li>Full collaboration capabilities with supervising teacher</li>
+                    <li>Bulk printing & downloading lessons</li>
+                </ul>
+                <Button title={"Upgrade Now"} onClick={()=> {props.setCont("Upgrade"); props.showPop("");}}/>
+                </div>
+            </div>
+        </div>
         )
     }
 
