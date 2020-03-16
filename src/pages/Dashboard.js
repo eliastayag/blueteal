@@ -231,7 +231,7 @@ function Dashboard(props) {
 
 
         <div class="right-content">
-        <img class="logo" src={require('../imgs/icons/png/t.thin.green.png')}/>
+        <img class="logo" src={require('../imgs/icons/png/t.thin.green.png')} onClick={()=>{props.setCont("Home"); setName("")}}/>
           <div className="dash-header">
           <Header title={name}/>
           </div>
