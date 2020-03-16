@@ -1,5 +1,4 @@
-/* @import '../../../styles/ThemeStyles.scss'; */
-
+@import '../../../styles/ThemeStyles.scss';
 .UEvents-tab{
     background-color: #EAEAEA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -21,11 +20,13 @@
 }
 
 .UEventsComp-rec{
+    display: flex;
     margin-top: 10px;
     width: 12vw;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    font-family: $niramit;
 }
 
 .UEC-recgray{
@@ -38,8 +39,23 @@
     justify-content: center;
     text-align: center;
     color: white;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
 }
 
 .UECp1{
     color: #687885;
+}
+
+.UECCONTENT{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0px 10px 10px 00px;
+    font-size: 17px;
+
+
 }
