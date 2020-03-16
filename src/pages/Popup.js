@@ -70,8 +70,8 @@ function Popup(props) {
 
         </div>
         <div className="popup-buttons"> 
-        <Button onClick={() => { props.showPop("")}} title={"Cancel"} />
-            <Button title={"OK"}/>
+        <Button onClick={() => { props.showPop("")}} style={{border:"white solid 1px", borderRadius:"100px", margin: "5px"}}title={"Cancel"} />
+            <Button style={{backgroundColor: "white", color: "#529A89", border: "white 1px solid",borderRadius:"100px", margin: "5px"}}title={"OK"}/>
         </div>
 
         
