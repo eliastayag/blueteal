@@ -15,7 +15,7 @@ function UpgradePopUp1(){
                 <div className="PUList">
                 <p className="PUHeader">Ready to Upgrade?</p>
                 <ul className="features">
-                    <li>Access to forums</li>
+                    <li>Access to forums for resources and help</li>
                     <li>More templates</li>
                     <li>Full collaboration capabilities with supervising teacher</li>
                     <li>Bulk printing & downloading lessons</li>

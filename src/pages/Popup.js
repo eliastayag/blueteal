@@ -72,12 +72,37 @@ function Popup(props) {
                 <div className="PUList">
                 <p className="PUHeader">Ready to Upgrade?</p>
                 <ul className="features">
-                    <li>Access to forums</li>
+                    <li>Access to forums for help and resources</li>
                     <li>More templates</li>
                     <li>Full collaboration capabilities with supervising teacher</li>
                     <li>Bulk printing & downloading lessons</li>
                 </ul>
-                <Button title={"Upgrade Now"} onClick={()=> {props.setCont("Upgrade"); props.showPop("");}}/>
+                <Button title={"Upgrade Now"} style={{backgroundColor:"#68B2A0", padding: "10px", width: "165px"}}onClick={()=> {props.setCont("Upgrade"); props.showPop("");}}/>
+                </div>
+            </div>
+        </div>
+        )
+    }
+
+    if (props.pop == "UpgradePrompt2"){
+        content=(
+            <div className="PopUp2Cont">
+            <div className="closeBut">
+            <img onClick={()=> {props.showPop("")}} src={require('../imgs/icons/png/close-white.png')}/>
+            </div>
+            <div className="PUContent">
+                <div className="PU2List">
+                <p className="PU2Header">Did you know you can upgrade to get these features?</p>
+                <ul className="features">
+                    <li>Access to forums for help and resources</li>
+                    <li>Unlimited templates</li>
+                    <li>Full collaboration capabilities with supervising teacher</li>
+                    <li>Bulk printing & downloading lessons</li>
+                </ul>
+                <Button title={"Upgrade Now"} style={{backgroundColor:"#68B2A0", padding: "10px", width: "165px"}}onClick={()=> {props.setCont("Upgrade"); props.showPop("");}}/>
+                </div>
+                <div className="PUDecor">
+                <img src={require('../imgs/popupfeature-2.png')}/>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ import './Performance.scss'
 
 
 
-function Performance() {
+function Performance(props) {
     
   return (
     <div className="PerformancePage">
@@ -21,11 +21,11 @@ function Performance() {
 
       <div className="performancePanel">
       <p> February 2, 2020</p>
-      <PerformanceTab/>
-      <p> Janurary 22, 2020</p>
-      <PerformanceTab/>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
+      <p> January 22, 2020</p>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
       <p> January 15, 2020</p>  
-      <PerformanceTab/>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
       </div>
     </div>
 
