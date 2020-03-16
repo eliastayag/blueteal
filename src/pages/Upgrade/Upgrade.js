@@ -18,7 +18,7 @@ function Upgrade(props) {
           <li>Default templates</li>
           <li>Reuse up to 3 lessons per month</li>
         </ul>
-          <Button style={{background:"#ADADAD"}} title={"Current Version"}/>
+          <Button style={{background:"#ADADAD", padding: "10px", width: "90%"}} title={"Current Version"}/>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ function Upgrade(props) {
             <li>3 Custom Templates</li>
             <li>Print and download individual lessons</li>
           </ul>
-          <Button style={{background:"#F06666"}} title={"Get Pro"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Pro"); props.setName("")}}/>
+          <Button style={{background:"#F06666", padding: "10px", width: "90%"}} title={"Get Pro"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Pro"); props.setName("")}}/>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ function Upgrade(props) {
             <li>Access to forums</li>
             <li>Full collaboration capabilities with supervising teacher</li>
           </ul>
-          <Button style={{background:"#7A4BFF"}} title={"Get Premium"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Premium"); props.setName("")}}/>
+          <Button style={{background:"#7A4BFF", padding: "10px", width: "90%"}} title={"Get Premium"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Premium"); props.setName("")}}/>
         </div>
       </div>
 
