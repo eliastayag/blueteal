@@ -8,13 +8,6 @@ function Schedule() {
     
   return (
     <div className="sched-comp">
-      <div style={{display:"flex", flexDirection:"column"}}>
-        <p>8:00</p>
-        <p>9:00</p>
-        <p>10:00</p>
-        <p>11:00</p>
-        <p>12:00</p>
-      </div>
       <div className="sched-days">
         <p className="sched-days-box sd1"></p>
         <p className="sched-days-box sd2">Mon</p>
@@ -25,8 +18,24 @@ function Schedule() {
 
       </div>
       <div style={{display:"flex", flexDirection:"row"}}>
-        <div className="sched-box1"></div>
-        <div className="sched-box2"></div>
+        <div className="sched-box1">
+        <p>8:00</p>
+        <p>9:00</p>
+        <p>10:00</p>
+        <p>11:00</p>
+        <p>12:00</p>
+        <p>13:00</p>
+        <p>14:00</p>
+        <p>15:00</p>
+        <p>16:00</p>
+        <p>17:00</p>
+        </div>
+        <div className="sched-box2">
+          <div className="time time-green">
+            <p>10:00 - 11:30</p>
+            <p>English 4 <br /> BCIT <br /> Henry Leung <br /> Pronouns + Verbs</p>
+          </div>
+        </div>
         <div className="sched-box3"></div>
         <div className="sched-box4"></div>
         <div className="sched-box5"></div>
