@@ -3,7 +3,7 @@ import './UpgradeStyles.scss';
 import Button from '../comps/Button/Button';
 
 
-function Upgrade() {
+function Upgrade(props) {
     
   return (
     <div className="UpgradeDiv">
@@ -35,7 +35,7 @@ function Upgrade() {
             <li>3 Custom Templates</li>
             <li>Print and download individual lessons</li>
           </ul>
-          <Button style={{background:"#F06666"}} title={"Get Pro"}/>
+          <Button style={{background:"#F06666"}} title={"Get Pro"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Pro"); props.setName("")}}/>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ function Upgrade() {
             <li>Access to forums</li>
             <li>Full collaboration capabilities with supervising teacher</li>
           </ul>
-          <Button style={{background:"#7A4BFF"}} title={"Get Premium"}/>
+          <Button style={{background:"#7A4BFF"}} title={"Get Premium"} onClick={()=>{ props.setCont("UpgradePay"); props.setUpgrade("Premium"); props.setName("")}}/>
         </div>
       </div>
 

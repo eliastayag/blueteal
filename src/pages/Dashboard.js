@@ -13,6 +13,7 @@ import ClassDash from './Classes/ClassDash';
 import SelectClass from './Classes/SelectClass';
 import ClassTemplate from './Classes/ClassTemplate';
 import ForumPost from './ForumPost/ForumPost'
+import UpgradePay from './Upgrade/UpgradePay';
 
 
 function Dashboard(props) {
@@ -21,6 +22,7 @@ function Dashboard(props) {
   const [name, setName] = useState("");
   const [classesname, setClassesName] = useState(null);
   const [lesson, lessonCount] = useState(null);
+  const [upgrade, setUpgrade] = useState(null);
 
 
   if (props.cont == "Home") {
@@ -122,10 +124,24 @@ function Dashboard(props) {
   }
   if (props.cont == "Upgrade") {
     Content = <Upgrade 
+              cont={props.cont}
+              setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+
+
+    />;
+  }
+  if (props.cont == "UpgradePay") {
+    Content = <UpgradePay 
     cont={props.cont}
     setCont={props.setCont}
               setName={setName}
               showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
 
 
     />;
