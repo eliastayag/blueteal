@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './UpgradeStyles.scss';
 import Button from '../comps/Button/Button';
+import Wrapper from '../Stripe/stripe'
+
 
 
 function UpgradePay(props) {
@@ -8,9 +10,9 @@ function UpgradePay(props) {
     var But = null;
 
     if (props.upgrade == "Pro"){
-        But = (
-            <Button title="Confirm" onClick={()=>{ props.setCont('ConfirmationPro'); props.setName("Plans")}} />
-        )
+        // But = (
+        //     <Button title="Confirm" onClick={()=>{ props.setCont('ConfirmationPro'); props.setName("Plans")}} />
+        // )
         Content = (
             <div className="UpgradeTab">
             <div className="UpgradeHeader-2">
@@ -30,9 +32,9 @@ function UpgradePay(props) {
         )
     }
     if (props.upgrade == "Premium"){
-        But = (
-            <Button title="Confirm" onClick={()=>{ props.setCont('ConfirmationPremium'); props.setName("Plans")}} />
-        )
+        // But = (
+        //     <Button title="Confirm" onClick={()=>{ props.setCont('ConfirmationPremium'); props.setName("Plans")}} />
+        // )
         Content = (
             <div className="UpgradeTab">
             <div className="UpgradeHeader-3">
@@ -59,7 +61,9 @@ function UpgradePay(props) {
             <div className="UpgradeTab1">
             <div className="UpgradeHeader-pay"></div>
             <div className="UpgradeTab-content-pay">
-            <Button title="Back to Options" onClick={()=>{ props.setCont("Upgrade"); props.setName("Plans")}} />
+                <Wrapper setCont={props.setCont} setName={props.setName}/>
+                 <Button title="Back to Options" onClick={()=>{ props.setCont('Upgrade'); props.setName("Plans")}} />
+
             {But}
             </div>
           </div>
