@@ -8,7 +8,7 @@ import Notes from '../comps/Notes/Notes';
 import PerformanceTab from '../comps/PerformanceTab/PerformanceTab';
 import UEvents from '../comps/UpcomingEvents/UpcomingEvents';
 import ClassesTab from '../comps/ClassesTab/ClassesTab';
-import './Home.scss';
+import './Home.scss'; 
 
 
 
@@ -33,7 +33,7 @@ function Home(props) {
 
       </div>
       <div className="cont2">
-      <PerformanceTab/>
+      <PerformanceTab cont={props.cont} setCont={props.setCont} showPop={props.showPop}/>
       </div>
 
 
