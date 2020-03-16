@@ -61,7 +61,7 @@ function UpgradePay(props) {
             <div className="UpgradeTab1">
             <div className="UpgradeHeader-pay"></div>
             <div className="UpgradeTab-content-pay">
-                <Wrapper setCont={props.setCont} setName={props.setName}/>
+                <Wrapper setCont={props.setCont} setName={props.setName} upgrade={props.upgrade} setUpgrade={props.setUpgrade} setStatus={props.setStatus} status={props.status}/>
                  <Button title="Back to Options" onClick={()=>{ props.setCont('Upgrade'); props.setName("Plans")}}  style={{background: '#68B2A0'}}/>
 
             {But}
