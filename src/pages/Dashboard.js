@@ -14,6 +14,8 @@ import SelectClass from './Classes/SelectClass';
 import ClassTemplate from './Classes/ClassTemplate';
 import ForumPost from './ForumPost/ForumPost'
 import UpgradePay from './Upgrade/UpgradePay';
+import ConfirmationPro from './Confirmation/ConfirmationPro';
+import ConfirmationPremium from './Confirmation/ConfirmationPremium';
 
 
 function Dashboard(props) {
@@ -136,6 +138,30 @@ function Dashboard(props) {
   }
   if (props.cont == "UpgradePay") {
     Content = <UpgradePay 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+
+
+    />;
+  }
+  if (props.cont == "ConfirmationPro") {
+    Content = <ConfirmationPro 
+    cont={props.cont}
+    setCont={props.setCont}
+              setName={setName}
+              showPop={props.showPop}
+              upgrade={upgrade}
+              setUpgrade={setUpgrade}
+
+
+    />;
+  }
+  if (props.cont == "ConfirmationPremium") {
+    Content = <ConfirmationPremium
     cont={props.cont}
     setCont={props.setCont}
               setName={setName}
